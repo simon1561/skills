@@ -1,0 +1,5 @@
+*
+!.gitignore
+!stock-research/
+!stock-research/**
+**/.DS_Store
