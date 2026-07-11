@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVG 视觉压力测试集｜总览</title>
+  <style>
+    :root { --bg:#f8f5ef; --card:#fdfaf5; --ink:#2e2a25; --muted:#6b5c45; --line:#dfcdb1; --gold:#b08d5a; }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:52px 58px 70px; background:var(--bg); color:var(--ink); font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
+    h1 { margin:0; font-size:42px; line-height:1.18; font-weight:800; letter-spacing:.2px; }
+    .sub { margin:12px 0 28px; font-size:18px; font-weight:400; color:var(--muted); }
+    .rule { height:2px; background:var(--line); margin-bottom:28px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+    figure { margin:0; padding:13px; background:var(--card); border:1px solid var(--line); border-radius:12px; }
+    img { display:block; width:100%; height:220px; object-fit:contain; object-position:center; background:#f8f5ef; border-radius:7px; }
+    figcaption { padding:12px 4px 3px; font-size:16px; font-weight:600; }
+    figcaption span { margin-left:8px; font-size:14px; font-weight:400; color:var(--muted); }
+    .footer { margin-top:28px; padding:16px 20px; background:var(--ink); border:1px solid var(--gold); border-radius:12px; color:#f0e8da; font-size:17px; font-weight:400; }
+    .footer strong { color:#f0b860; font-weight:800; }
+  </style>
+</head>
+<body>
+  <h1>SVG 视觉压力测试集｜总览</h1>
+  <p class="sub">九类信息关系，同一缩略尺度审查字体、留白、色彩锚点与结构一致性。</p>
+  <div class="rule"></div>
+  <main class="grid">
+    <figure><img src="01-趋势数据图.png" alt="趋势数据图"><figcaption>01 趋势数据图 <span>连续数量变化</span></figcaption></figure>
+    <figure><img src="02-机制流程图.png" alt="机制流程图"><figcaption>02 机制流程图 <span>因果与传导</span></figcaption></figure>
+    <figure><img src="03-横向比较表.png" alt="横向比较表"><figcaption>03 横向比较表 <span>精确横向比较</span></figcaption></figure>
+    <figure><img src="04-手机转发图.png" alt="手机转发图"><figcaption>04 手机转发图 <span>纵向阅读</span></figcaption></figure>
+    <figure><img src="05-价值桥.png" alt="价值桥"><figcaption>05 价值桥 <span>累计变化</span></figcaption></figure>
+    <figure><img src="06-层级图.png" alt="层级图"><figcaption>06 层级图 <span>归属关系</span></figcaption></figure>
+    <figure><img src="07-构成与排序.png" alt="构成与排序"><figcaption>07 构成与排序 <span>比例与规模</span></figcaption></figure>
+    <figure><img src="08-事件时间线.png" alt="事件时间线"><figcaption>08 事件时间线 <span>离散事件</span></figcaption></figure>
+    <figure><img src="09-二维定位图.png" alt="二维定位图"><figcaption>09 二维定位图 <span>相对定位</span></figcaption></figure>
+    <figure><img src="10-条件与证伪.png" alt="条件与证伪"><figcaption>10 条件与证伪 <span>可验证判断</span></figcaption></figure>
+    <figure><img src="11-KPI仪表板.png" alt="KPI仪表板"><figcaption>11 KPI仪表板 <span>多指标状态</span></figcaption></figure>
+  </main>
+  <div class="footer"><strong>审查重点：</strong>同一视觉语言不等于同一版式。每张图都应让信息关系决定结构，而非把所有内容做成卡片。</div>
+</body>
+</html>

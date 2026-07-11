@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <style>
+    text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
+    .title { font-size:48px; font-weight:800; fill:#2f2417; }.sub { font-size:22px; font-weight:400; fill:#6b5c45; }
+    .h { font-size:22px; font-weight:700; fill:#2f2417; }.body { font-size:19px; font-weight:400; fill:#4b3e2c; }
+    .num { font-size:24px; font-weight:800; fill:#2e2a25; }.note { font-size:16px; font-weight:400; fill:#7d6e54; }
+  </style>
+  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <text x="70" y="75" class="title">比较表示例：相同字段下的横向决策</text>
+  <text x="70" y="116" class="sub">示例数据，仅用于测试表格的对齐、数值层级与重点突出方式</text>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
+
+  <rect x="70" y="195" width="1460" height="540" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
+  <rect x="430" y="220" width="350" height="70" rx="10" fill="#f3e9da"/>
+  <rect x="810" y="220" width="350" height="70" rx="10" fill="#2e2a25"/>
+  <rect x="1190" y="220" width="300" height="70" rx="10" fill="#f3e9da"/>
+  <rect x="810" y="321" width="350" height="326" fill="#f6efe3"/>
+  <text x="105" y="264" class="h">比较维度</text>
+  <text x="605" y="264" text-anchor="middle" class="h">方案 A</text>
+  <text x="985" y="264" text-anchor="middle" font-size="22" font-weight="800" fill="#f0b860">方案 B（基准）</text>
+  <text x="1340" y="264" text-anchor="middle" class="h">方案 C</text>
+  <g stroke="#e3d4bd" stroke-width="1.5"><line x1="105" y1="320" x2="1490" y2="320"/><line x1="105" y1="402" x2="1490" y2="402"/><line x1="105" y1="484" x2="1490" y2="484"/><line x1="105" y1="566" x2="1490" y2="566"/><line x1="105" y1="648" x2="1490" y2="648"/></g>
+  <g class="body"><text x="105" y="370">增长速度</text><text x="105" y="452">盈利能力</text><text x="105" y="534">现金消耗</text><text x="105" y="616">执行复杂度</text></g>
+  <g class="num" text-anchor="end"><text x="740" y="370">24%</text><text x="1120" y="370">18%</text><text x="1450" y="370">11%</text><text x="740" y="452">8%</text><text x="1120" y="452">14%</text><text x="1450" y="452">17%</text></g>
+  <g class="body" text-anchor="end"><text x="740" y="534">高</text><text x="1120" y="534">中</text><text x="1450" y="534">低</text><text x="740" y="616">低</text><text x="1120" y="616">中</text><text x="1450" y="616">高</text></g>
+  <g stroke="#ab7642" stroke-width="2"><line x1="810" y1="321" x2="810" y2="647"/><line x1="1160" y1="321" x2="1160" y2="647"/></g>
+  <text x="985" y="695" text-anchor="middle" font-size="17" font-weight="600" fill="#8b572a">在速度、利润与复杂度之间最均衡</text>
+
+  <rect x="70" y="770" width="1460" height="62" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="811" font-size="24" font-weight="800" fill="#f0b860">需要精确比较时，用表格；不要把可比字段拆散到不同样式的卡片中。</text>
+  <text x="70" y="866" class="note">视觉压力测试 03｜检查列标题、数值右对齐、共享行基线与“基准列”突出是否克制</text>
+</svg>

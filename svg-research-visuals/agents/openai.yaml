@@ -1,0 +1,4 @@
+interface:
+  display_name: "SVG 信息图视觉规范"
+  short_description: "创建精致暖色的研究型与演示型 SVG 信息图"
+  default_prompt: "使用 $svg-research-visuals 创建一张精致暖色的研究型 SVG 信息图。"

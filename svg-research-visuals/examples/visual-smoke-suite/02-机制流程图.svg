@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 0 L 12 6 L 0 12 Z" fill="#9a8a55"/></marker>
+    <marker id="arrow-risk" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 0 L 12 6 L 0 12 Z" fill="#9a5048"/></marker>
+  </defs>
+  <style>
+    text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
+    .title { font-size:48px; font-weight:800; fill:#2f2417; }.sub { font-size:22px; font-weight:400; fill:#6b5c45; }
+    .h { font-size:24px; font-weight:700; fill:#2f2417; }.body { font-size:18px; font-weight:400; fill:#4b3e2c; }
+    .note { font-size:16px; font-weight:400; fill:#7d6e54; }.pill { font-size:16px; font-weight:600; fill:#8b572a; }
+  </style>
+  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <text x="70" y="75" class="title">机制图示例：外部变化如何传导为经营结果</text>
+  <text x="70" y="116" class="sub">示例内容，仅用于测试主链路、箭头方向、风险分支与可观测指标的层级</text>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
+
+  <text x="70" y="206" class="pill">主链路：从左到右阅读</text>
+  <g fill="#fdfaf5" stroke="#c8b695" stroke-width="2">
+    <rect x="70" y="300" width="250" height="190" rx="14"/><rect x="410" y="300" width="250" height="190" rx="14"/>
+    <rect x="750" y="300" width="250" height="190" rx="14"/><rect x="1090" y="300" width="250" height="190" rx="14"/>
+  </g>
+  <g fill="#c17a45"><rect x="70" y="300" width="9" height="190" rx="4"/><rect x="410" y="300" width="9" height="190" rx="4"/><rect x="750" y="300" width="9" height="190" rx="4"/><rect x="1090" y="300" width="9" height="190" rx="4"/></g>
+  <g stroke="#9a8a55" stroke-width="4" marker-end="url(#arrow)"><line x1="320" y1="395" x2="390" y2="395"/><line x1="660" y1="395" x2="730" y2="395"/><line x1="1000" y1="395" x2="1070" y2="395"/></g>
+  <g class="h"><text x="105" y="350">外部变化</text><text x="445" y="350">经营动作</text><text x="785" y="350">单位经济</text><text x="1125" y="350">可观测结果</text></g>
+  <g class="body">
+    <text x="105" y="389">关税 / 规则 / 成本</text><text x="105" y="423">改变原有履约条件</text>
+    <text x="445" y="389">本地仓、供给调整</text><text x="445" y="423">价格与补贴分摊</text>
+    <text x="785" y="389">交付速度改善</text><text x="785" y="423">但库存与费用上升</text>
+    <text x="1125" y="389">转化、GMV、利润率</text><text x="1125" y="423">以及现金消耗</text>
+  </g>
+  <g class="note" text-anchor="middle"><text x="355" y="370">触发</text><text x="695" y="370">重构</text><text x="1035" y="370">传导</text></g>
+
+  <rect x="750" y="558" width="590" height="128" rx="12" fill="#f4eae7" stroke="#e4cbc5" stroke-width="1.5"/>
+  <rect x="750" y="558" width="8" height="128" rx="4" fill="#9a5048"/>
+  <text x="785" y="602" class="h" fill="#8a443c">风险分支：本地化不一定创造价值</text>
+  <text x="785" y="638" class="body" fill="#8a443c">若新增库存、履约和补贴成本超过转化率与价格的改善，</text>
+  <text x="785" y="668" class="body" fill="#8a443c">业务会从“更可持续”变成“更重但低回报”。</text>
+  <path d="M 875 490 C 875 520, 875 530, 875 548" fill="none" stroke="#9a5048" stroke-width="3" marker-end="url(#arrow-risk)"/>
+
+  <rect x="70" y="558" width="590" height="128" rx="12" fill="#fdfaf5" stroke="#d7c8ad" stroke-width="1.5"/>
+  <text x="105" y="602" class="h">应跟踪的证据</text>
+  <text x="105" y="638" class="body">本地履约占比 ｜ 价格 / 转化率 ｜ 毛利率 ｜ 营运资本</text>
+  <text x="105" y="668" class="note">把“机制是否成立”转化为可观察的经营信号</text>
+
+  <rect x="70" y="750" width="1270" height="76" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="796" font-size="25" font-weight="800" fill="#f0b860">流程图的价值不在画出节点，而在让读者看到方向、代价与验证点。</text>
+  <text x="70" y="862" class="note">视觉压力测试 02｜检查箭头是否有语义、流程方向是否一致、风险是否仅作为支线出现</text>
+</svg>

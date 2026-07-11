@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <style>
+    text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
+    .title { font-size:46px; font-weight:800; fill:#2f2417; }.sub { font-size:24px; font-weight:400; fill:#6b5c45; }
+    .h { font-size:28px; font-weight:700; fill:#2f2417; }.body { font-size:25px; font-weight:400; fill:#4b3e2c; }
+    .note { font-size:19px; font-weight:400; fill:#7d6e54; }.pill { font-size:20px; font-weight:600; fill:#8b572a; }
+  </style>
+  <rect width="1080" height="1350" fill="#f8f5ef"/>
+  <text x="70" y="90" class="title">一页结论：价值与风险</text>
+  <text x="70" y="132" class="sub">示例数据，仅测试手机纵向阅读的字号、密度与阅读路径</text>
+  <line x1="70" y1="168" x2="1010" y2="168" stroke="#dfcdb1" stroke-width="2"/>
+
+  <rect x="70" y="210" width="940" height="290" rx="18" fill="#2e2a25" stroke="#b08d5a" stroke-width="2.5"/>
+  <text x="115" y="268" class="pill" fill="#f0b860">基准内在价值</text>
+  <text x="115" y="360" font-size="76" font-weight="800" fill="#f0b860">135 美元</text>
+  <text x="115" y="408" font-size="26" font-weight="400" fill="#f0e8da">由国内现金流、增长选择权和折价净现金共同构成</text>
+  <rect x="760" y="260" width="190" height="118" rx="14" fill="#3d372f" stroke="#6d5b42" stroke-width="1.5"/>
+  <text x="855" y="309" text-anchor="middle" font-size="20" font-weight="600" fill="#d9bf9a">安全垫</text>
+  <text x="855" y="352" text-anchor="middle" font-size="35" font-weight="800" fill="#f0e8da">121</text>
+
+  <rect x="70" y="550" width="940" height="270" rx="16" fill="#fdfaf5" stroke="#d7c8ad" stroke-width="1.5"/>
+  <rect x="70" y="550" width="10" height="270" rx="5" fill="#c17a45"/>
+  <text x="112" y="610" class="h">价值底座</text>
+  <text x="112" y="657" class="body">• 稳定经营利润提供主要价值</text>
+  <text x="112" y="702" class="body">• 净现金提供下行缓冲，但并非全部可分配</text>
+  <text x="112" y="755" class="note">读法：先问底座能否守住，再讨论增长弹性。</text>
+
+  <rect x="70" y="860" width="940" height="270" rx="16" fill="#fdfaf5" stroke="#e4cbc5" stroke-width="1.5"/>
+  <rect x="70" y="860" width="10" height="270" rx="5" fill="#9a5048"/>
+  <text x="112" y="920" class="h">需要盯住的变量</text>
+  <text x="112" y="967" class="body">• 增长业务是否按计划收窄亏损</text>
+  <text x="112" y="1012" class="body">• 新投入是否侵蚀现金和回报率</text>
+  <text x="112" y="1065" class="note">不把所有风险塞进一页，只保留真正改变结论的变量。</text>
+
+  <rect x="70" y="1185" width="940" height="92" rx="14" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="112" y="1240" font-size="29" font-weight="800" fill="#f0b860">手机图只传达一个判断：底座决定下限，变量决定上限。</text>
+  <text x="70" y="1320" class="note">视觉压力测试 04｜检查1080px纵向画布下的文字可读性、模块数量与结论聚焦</text>
+</svg>

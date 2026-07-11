@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <style>
+    text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
+    .title { font-size:48px; font-weight:800; fill:#2f2417; }.sub { font-size:22px; font-weight:400; fill:#6b5c45; }
+    .h { font-size:22px; font-weight:700; fill:#2f2417; }.body { font-size:18px; font-weight:400; fill:#4b3e2c; }.note { font-size:16px; font-weight:400; fill:#7d6e54; }
+    .value { font-size:42px; font-weight:800; fill:#2e2a25; }.delta { font-size:18px; font-weight:700; fill:#8b572a; }
+  </style>
+  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <text x="70" y="75" class="title">KPI仪表板：多指标必须共享清晰的比较基准</text>
+  <text x="70" y="116" class="sub">示例数据，仅测试多指标布局、单位、同比基准、微型趋势和信息密度</text>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
+  <text x="70" y="200" class="note">报告期：2026 Q1 ｜ 所有变化均为同比 ｜ 示例数据</text>
+  <g fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"><rect x="70" y="240" width="690" height="235" rx="14"/><rect x="840" y="240" width="690" height="235" rx="14"/><rect x="70" y="525" width="690" height="235" rx="14"/><rect x="840" y="525" width="690" height="235" rx="14"/></g>
+  <g fill="#c17a45"><rect x="70" y="240" width="8" height="235" rx="4"/><rect x="840" y="240" width="8" height="235" rx="4"/><rect x="70" y="525" width="8" height="235" rx="4"/><rect x="840" y="525" width="8" height="235" rx="4"/></g>
+  <g class="h"><text x="110" y="288">收入</text><text x="880" y="288">经营利润率</text><text x="110" y="573">经营现金流</text><text x="880" y="573">活跃用户</text></g>
+  <g class="value"><text x="110" y="355">1,062 亿</text><text x="880" y="355">18.4%</text><text x="110" y="640">816 亿</text><text x="880" y="640">3.2 亿</text></g>
+  <g class="delta"><text x="110" y="392">同比 +12%</text><text x="880" y="392">同比 +1.6pct</text><text x="110" y="677">同比 +9%</text><text x="880" y="677">同比 +6%</text></g>
+  <g class="note"><text x="110" y="430">单位：亿元 ｜ 规模指标</text><text x="880" y="430">单位：% ｜ 质量指标</text><text x="110" y="715">单位：亿元 ｜ 现金转换</text><text x="880" y="715">单位：人 ｜ 用户基础</text></g>
+  <g fill="none" stroke="#ab7642" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M 500 395 L 545 382 L 590 388 L 635 365 L 690 350"/><path d="M 1270 395 L 1315 390 L 1360 374 L 1405 366 L 1460 350"/><path d="M 500 680 L 545 670 L 590 678 L 635 660 L 690 650"/><path d="M 1270 680 L 1315 672 L 1360 666 L 1405 658 L 1460 650"/></g>
+  <g fill="#f0b860" stroke="#7a4a28" stroke-width="2"><circle cx="690" cy="350" r="5"/><circle cx="1460" cy="350" r="5"/><circle cx="690" cy="650" r="5"/><circle cx="1460" cy="650" r="5"/></g>
+  <rect x="70" y="800" width="1460" height="56" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="838" font-size="23" font-weight="800" fill="#f0b860">仪表板不等于数字墙：每张指标卡必须同时说明“是什么、与什么比、变化方向”。</text>
+  <text x="70" y="882" class="note">视觉压力测试 11｜检查单位、比较基准、微型趋势、同级卡片的共享网格与信息密度</text>
+</svg>
