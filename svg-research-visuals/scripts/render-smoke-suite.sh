@@ -10,7 +10,24 @@ if [[ ! -x "$chrome_bin" ]]; then
   exit 1
 fi
 
-for svg in "$suite_dir"/*.svg; do
+if [[ "$#" -gt 0 ]]; then
+  svg_files=()
+  for item in "$@"; do
+    if [[ "$item" = /* ]]; then
+      svg_files+=("$item")
+    else
+      svg_files+=("$suite_dir/$item")
+    fi
+  done
+else
+  svg_files=("$suite_dir"/*.svg)
+fi
+
+for svg in "${svg_files[@]}"; do
+  if [[ ! -f "$svg" ]]; then
+    echo "未找到 SVG：$svg" >&2
+    exit 1
+  fi
   dimensions="$(perl -ne 'if (/<svg[^>]*\bwidth="([0-9]+)"[^>]*\bheight="([0-9]+)"/) { print "$1,$2"; exit }' "$svg")"
   if [[ ! "$dimensions" =~ ^[0-9]+,[0-9]+$ ]]; then
     echo "无法读取 SVG 画布尺寸：$svg" >&2

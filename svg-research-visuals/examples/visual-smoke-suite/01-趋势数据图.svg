@@ -34,7 +34,7 @@
   </g>
   <g class="body" text-anchor="middle"><text x="240" y="720">2025 Q1</text><text x="410" y="720">2025 Q2</text><text x="580" y="720">2025 Q3</text><text x="750" y="720">2025 Q4</text><text x="920" y="720">2026 Q1</text></g>
   <g class="label" text-anchor="middle"><text x="240" y="382">39%</text><text x="410" y="424">33%</text><text x="580" y="480">25%</text><text x="750" y="515">20%</text><text x="920" y="529">18%</text></g>
-  <rect x="724" y="305" width="250" height="96" rx="10" fill="#f4eae7" stroke="#e4cbc5" stroke-width="1.5"/>
+  <rect x="724" y="305" width="300" height="96" rx="10" fill="#f4eae7" stroke="#e4cbc5" stroke-width="1.5"/>
   <rect x="724" y="305" width="7" height="96" rx="3" fill="#9a5048"/>
   <text x="750" y="340" class="h" fill="#8a443c">读法：斜率在放缓</text>
   <text x="750" y="372" class="note" fill="#8a443c">趋势仍为正，不等同于收入下降</text>

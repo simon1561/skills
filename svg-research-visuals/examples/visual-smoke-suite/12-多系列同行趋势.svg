@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">多系列同行趋势：主角修复更快</title>
+  <desc id="desc">用虚构数据演示五家公司同一指标的时间比较，研究标的作为主角，关键对手次级强调，其余同行作为浅色参照。</desc>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:22px;font-weight:400;fill:#6b5c45}
+    .h{font-size:24px;font-weight:700;fill:#2f2417}.body{font-size:19px;font-weight:400;fill:#4b3e2c}
+    .note{font-size:16px;font-weight:400;fill:#7d6e54}.axis{font-size:16px;font-weight:400;fill:#7d6e54}
+    .heroLabel{font-size:18px;font-weight:700;fill:#7a4a28}.peerLabel{font-size:16px;font-weight:600;fill:#6c7d89}
+    .refLabel{font-size:15px;font-weight:400;fill:#8b7e6b}.num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+  </style>
+  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <text x="70" y="75" class="title">多系列同行趋势：主角修复更快</text>
+  <text x="70" y="116" class="sub">示例数据，仅用于测试“主角＋参照”、末端直接标注与多系列层级</text>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
+
+  <rect x="70" y="180" width="1100" height="570" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
+  <text x="110" y="225" class="h">毛利率趋势</text>
+  <text x="110" y="257" class="note">单位：%｜2021—2026E｜同一会计口径</text>
+
+  <!-- plot grid -->
+  <g stroke="#e8ddcc" stroke-width="1">
+    <line x1="150" y1="350" x2="1020" y2="350"/><line x1="150" y1="450" x2="1020" y2="450"/>
+    <line x1="150" y1="550" x2="1020" y2="550"/><line x1="150" y1="650" x2="1020" y2="650"/>
+  </g>
+  <line x1="150" y1="300" x2="150" y2="650" stroke="#8d7d64" stroke-width="1.5"/>
+  <line x1="150" y1="650" x2="1020" y2="650" stroke="#8d7d64" stroke-width="1.5"/>
+  <g class="axis num" text-anchor="end"><text x="134" y="356">70</text><text x="134" y="456">60</text><text x="134" y="556">50</text><text x="134" y="656">40</text></g>
+  <g class="axis num" text-anchor="middle">
+    <text x="220" y="686">2021</text><text x="380" y="686">2022</text><text x="540" y="686">2023</text>
+    <text x="700" y="686">2024</text><text x="860" y="686">2025</text><text x="1020" y="686">2026E</text>
+  </g>
+
+  <!-- reference peers first -->
+  <path d="M220 430 L380 440 L540 460 L700 470 L860 480 L1020 490" fill="none" stroke="#c9bca9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220 530 L380 520 L540 530 L700 540 L860 530 L1020 520" fill="none" stroke="#d2c6b5" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220 600 L380 590 L540 580 L700 570 L860 560 L1020 550" fill="none" stroke="#ddd2c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- key competitor -->
+  <path d="M220 470 L380 480 L540 490 L700 470 L860 460 L1020 450" fill="none" stroke="#6c7d89" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1020" cy="450" r="6" fill="#f8f5ef" stroke="#6c7d89" stroke-width="3"/>
+
+  <!-- hero on top -->
+  <path d="M220 570 L380 550 L540 520 L700 490 L860 450 L1020 420" fill="none" stroke="#c17a45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#f8f5ef" stroke="#7a4a28" stroke-width="3">
+    <circle cx="220" cy="570" r="6"/><circle cx="380" cy="550" r="6"/><circle cx="540" cy="520" r="6"/>
+    <circle cx="700" cy="490" r="6"/><circle cx="860" cy="450" r="6"/><circle cx="1020" cy="420" r="9" fill="#f0b860"/>
+  </g>
+
+  <!-- direct end labels in a reserved lane -->
+  <line x1="1029" y1="420" x2="1050" y2="420" stroke="#c17a45" stroke-width="2"/>
+  <text x="1060" y="426" class="heroLabel num">研究标的 63%</text>
+  <line x1="1028" y1="450" x2="1050" y2="450" stroke="#6c7d89" stroke-width="2"/>
+  <text x="1060" y="456" class="peerLabel num">关键对手 60%</text>
+  <text x="1060" y="496" class="refLabel num">同行 A　56%</text>
+  <text x="1060" y="526" class="refLabel num">同行 B　53%</text>
+  <text x="1060" y="556" class="refLabel num">同行 C　50%</text>
+
+  <rect x="1200" y="180" width="330" height="570" rx="14" fill="#fdfaf5" stroke="#c17a45" stroke-width="2"/>
+  <text x="1235" y="225" class="h">读法</text>
+  <line x1="1235" y1="250" x2="1495" y2="250" stroke="#e3d4bd" stroke-width="1.5"/>
+  <text x="1235" y="304" font-size="38" font-weight="800" fill="#7a4a28" class="num">+15ppt</text>
+  <text x="1235" y="338" class="body">主角六年累计修复</text>
+  <rect x="1235" y="380" width="260" height="104" rx="10" fill="#f3e9da"/>
+  <text x="1260" y="418" class="h">层级而非彩虹</text>
+  <text x="1260" y="452" class="note">主角最醒目，关键对手次之，</text>
+  <text x="1260" y="478" class="note">背景同行只提供参照。</text>
+  <text x="1235" y="538" class="body">• 末端直接标注</text>
+  <text x="1235" y="574" class="body">• 右侧预留标签轨道</text>
+  <text x="1235" y="610" class="body">• 不使用远端图例</text>
+  <text x="1235" y="646" class="body">• 颜色不是唯一编码</text>
+  <text x="1235" y="704" class="note">若六条线同等重要，改用小倍图。</text>
+
+  <rect x="70" y="780" width="1460" height="70" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="104" y="823" font-size="23" font-weight="800" fill="#f0b860">多系列图先决定“谁是主角”；视觉权重必须服从研究问题，而不是平均分配颜色。</text>
+  <text x="70" y="883" class="note">视觉压力测试 12｜虚构数据｜检查系列数量、主角＋参照、末端直标与标签碰撞</text>
+</svg>
