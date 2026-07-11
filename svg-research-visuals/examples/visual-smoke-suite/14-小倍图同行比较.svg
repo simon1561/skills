@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">小倍图同行比较：六家公司共享同一把尺子</title>
+  <desc id="desc">用虚构数据演示六家公司同一指标的时间比较。所有面板共享40%到70%的Y轴范围，并按最新值从高到低排序。</desc>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
+    .card{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:2}.name{font-size:23px;font-weight:700;fill:#2f2417}
+    .latest{font-size:25px;font-weight:800;fill:#7a4a28}.axis{font-size:15px;font-weight:400;fill:#7d6e54}
+    .grid{stroke:#e3d4bd;stroke-width:1.5}.series{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+  </style>
+  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <text x="70" y="76" class="title">小倍图同行比较：六家公司共享同一把尺子</text>
+  <text x="70" y="116" class="sub">示例数据｜毛利率，2022—2026E｜按2026E从高到低排序｜所有面板共享40%—70%的Y轴</text>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+
+  <!-- cards -->
+  <g>
+    <rect x="70" y="185" width="460" height="270" rx="12" class="card"/>
+    <rect x="570" y="185" width="460" height="270" rx="12" class="card"/>
+    <rect x="1070" y="185" width="460" height="270" rx="12" class="card"/>
+    <rect x="70" y="490" width="460" height="270" rx="12" class="card"/>
+    <rect x="570" y="490" width="460" height="270" rx="12" class="card"/>
+    <rect x="1070" y="490" width="460" height="270" rx="12" class="card"/>
+  </g>
+
+  <!-- shared grids, row 1 -->
+  <g class="grid">
+    <path d="M120 260H490 M120 325H490 M120 390H490"/>
+    <path d="M620 260H990 M620 325H990 M620 390H990"/>
+    <path d="M1120 260H1490 M1120 325H1490 M1120 390H1490"/>
+    <path d="M120 565H490 M120 630H490 M120 695H490"/>
+    <path d="M620 565H990 M620 630H990 M620 695H990"/>
+    <path d="M1120 565H1490 M1120 630H1490 M1120 695H1490"/>
+  </g>
+
+  <!-- names and latest values -->
+  <g class="num">
+    <text x="95" y="226" class="name">公司 A</text><text x="505" y="226" class="latest" text-anchor="end">68%</text>
+    <text x="595" y="226" class="name">公司 B</text><text x="1005" y="226" class="latest" text-anchor="end">64%</text>
+    <text x="1095" y="226" class="name">公司 C</text><text x="1505" y="226" class="latest" text-anchor="end">60%</text>
+    <text x="95" y="531" class="name">公司 D</text><text x="505" y="531" class="latest" text-anchor="end">56%</text>
+    <text x="595" y="531" class="name">公司 E</text><text x="1005" y="531" class="latest" text-anchor="end">52%</text>
+    <text x="1095" y="531" class="name">公司 F</text><text x="1505" y="531" class="latest" text-anchor="end">48%</text>
+  </g>
+
+  <!-- first-column y labels -->
+  <g class="axis num" text-anchor="end">
+    <text x="110" y="265">70%</text><text x="110" y="330">55%</text><text x="110" y="395">40%</text>
+    <text x="110" y="570">70%</text><text x="110" y="635">55%</text><text x="110" y="700">40%</text>
+  </g>
+
+  <!-- x labels -->
+  <g class="axis num">
+    <text x="120" y="425">2022</text><text x="490" y="425" text-anchor="end">2026E</text>
+    <text x="620" y="425">2022</text><text x="990" y="425" text-anchor="end">2026E</text>
+    <text x="1120" y="425">2022</text><text x="1490" y="425" text-anchor="end">2026E</text>
+    <text x="120" y="730">2022</text><text x="490" y="730" text-anchor="end">2026E</text>
+    <text x="620" y="730">2022</text><text x="990" y="730" text-anchor="end">2026E</text>
+    <text x="1120" y="730">2022</text><text x="1490" y="730" text-anchor="end">2026E</text>
+  </g>
+
+  <!-- series -->
+  <g>
+    <path d="M120 325 L212 316 L305 303 L397 286 L490 269" class="series" stroke="#c17a45"/>
+    <path d="M620 312 L712 308 L805 303 L897 295 L990 286" class="series" stroke="#9a8a55"/>
+    <path d="M1120 351 L1212 338 L1305 329 L1397 316 L1490 303" class="series" stroke="#6f7d67"/>
+    <path d="M120 604 L212 608 L305 617 L397 621 L490 625" class="series" stroke="#6c7d89"/>
+    <path d="M620 677 L712 668 L805 660 L897 651 L990 643" class="series" stroke="#8a6f78"/>
+    <path d="M1120 625 L1212 638 L1305 647 L1397 656 L1490 660" class="series" stroke="#9a5048"/>
+  </g>
+  <g>
+    <circle cx="490" cy="269" r="6" fill="#c17a45"/><circle cx="990" cy="286" r="6" fill="#9a8a55"/>
+    <circle cx="1490" cy="303" r="6" fill="#6f7d67"/><circle cx="490" cy="625" r="6" fill="#6c7d89"/>
+    <circle cx="990" cy="643" r="6" fill="#8a6f78"/><circle cx="1490" cy="660" r="6" fill="#9a5048"/>
+  </g>
+
+  <rect x="70" y="815" width="1460" height="120" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="104" y="857" font-size="17" font-weight="600" fill="#d9bf9a">一句话结论</text>
+  <text x="104" y="897" font-size="24" font-weight="800" fill="#f0b860">小倍图不是六张各自缩放的小图；共享尺度，才使水平与斜率真正可比。</text>
+  <text x="70" y="974" class="axis">注：数据为虚构示例，仅用于验证小倍图的共享坐标轴、排序和末端直标规则。</text>
+</svg>

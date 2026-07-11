@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">构成迁移：全景与关键层必须分开读</title>
+  <desc id="desc">用虚构数据演示收入构成随时间迁移。左侧100%堆叠面积图展示全景，右侧独立折线精确展示云业务占比。</desc>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
+    .card{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:2}.h{font-size:28px;font-weight:800;fill:#9c5f2a}
+    .body{font-size:19px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
+    .axis{font-size:15px;font-weight:400;fill:#7d6e54}.grid{stroke:#e3d4bd;stroke-width:1.5}
+    .num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+  </style>
+  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <text x="70" y="76" class="title">构成迁移：全景与关键层必须分开读</text>
+  <text x="70" y="116" class="sub">示例数据｜收入构成，2021—2026E｜层序固定；关键中间层单独抽出，避免波动基线误导</text>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+
+  <rect x="70" y="185" width="915" height="575" rx="12" class="card"/>
+  <rect x="1025" y="185" width="505" height="575" rx="12" class="card"/>
+  <text x="100" y="230" class="h">收入构成全景</text>
+  <text x="1055" y="230" class="h">关键层：云业务占比</text>
+  <text x="100" y="262" class="note">100%堆叠面积图｜层序全期固定</text>
+  <text x="1055" y="262" class="note">独立折线｜精确读取自身变化</text>
+
+  <!-- left chart grid -->
+  <g class="grid">
+    <path d="M120 300H875 M120 400H875 M120 500H875 M120 600H875 M120 700H875"/>
+  </g>
+  <g class="axis num" text-anchor="end">
+    <text x="110" y="305">100%</text><text x="110" y="405">75%</text><text x="110" y="505">50%</text><text x="110" y="605">25%</text><text x="110" y="705">0%</text>
+  </g>
+
+  <!-- stacked areas: software, cloud, services, hardware, other -->
+  <path d="M120 700 L270 700 L420 700 L570 700 L720 700 L870 700 L870 596 L720 588 L570 580 L420 576 L270 576 L120 580 Z" fill="#9a8a55"/>
+  <path d="M120 520 L270 496 L420 468 L570 440 L720 416 L870 396 L870 596 L720 588 L570 580 L420 576 L270 576 L120 580 Z" fill="#c17a45"/>
+  <path d="M120 420 L270 400 L420 380 L570 360 L720 348 L870 340 L870 396 L720 416 L570 440 L420 468 L270 496 L120 520 Z" fill="#6f7d67"/>
+  <path d="M120 340 L270 332 L420 328 L570 320 L720 316 L870 316 L870 340 L720 348 L570 360 L420 380 L270 400 L120 420 Z" fill="#6c7d89"/>
+  <path d="M120 300 L270 300 L420 300 L570 300 L720 300 L870 300 L870 316 L720 316 L570 320 L420 328 L270 332 L120 340 Z" fill="#8a6f78"/>
+
+  <!-- x labels -->
+  <g class="axis num" text-anchor="middle">
+    <text x="120" y="730">2021</text><text x="270" y="730">2022</text><text x="420" y="730">2023</text>
+    <text x="570" y="730">2024</text><text x="720" y="730">2025</text><text x="870" y="730">2026E</text>
+  </g>
+
+  <!-- end labels -->
+  <g class="num" font-size="15" font-weight="600" fill="#3d3122">
+    <path d="M870 648H900" stroke="#9a8a55" stroke-width="2"/><text x="908" y="653">软件 26%</text>
+    <path d="M870 496H900" stroke="#c17a45" stroke-width="2"/><text x="908" y="501">云 50%</text>
+    <path d="M870 368H900" stroke="#6f7d67" stroke-width="2"/><text x="908" y="373">服务 14%</text>
+    <path d="M870 328H900" stroke="#6c7d89" stroke-width="2"/><text x="908" y="333">硬件 6%</text>
+    <path d="M870 308H900" stroke="#8a6f78" stroke-width="2"/><text x="908" y="300">其他 4%</text>
+  </g>
+
+  <!-- right chart -->
+  <g class="grid">
+    <path d="M1090 300H1470 M1090 433H1470 M1090 567H1470 M1090 700H1470"/>
+  </g>
+  <g class="axis num" text-anchor="end">
+    <text x="1080" y="305">60%</text><text x="1080" y="438">40%</text><text x="1080" y="572">20%</text><text x="1080" y="705">0%</text>
+  </g>
+  <path d="M1090 600 L1166 567 L1242 520 L1318 467 L1394 413 L1470 367" fill="none" stroke="#c17a45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#c17a45">
+    <circle cx="1090" cy="600" r="6"/><circle cx="1166" cy="567" r="6"/><circle cx="1242" cy="520" r="6"/>
+    <circle cx="1318" cy="467" r="6"/><circle cx="1394" cy="413" r="6"/><circle cx="1470" cy="367" r="7"/>
+  </g>
+  <g class="axis num" text-anchor="middle">
+    <text x="1090" y="730">2021</text><text x="1242" y="730">2023</text><text x="1394" y="730">2025</text><text x="1470" y="730">26E</text>
+  </g>
+  <rect x="1380" y="305" width="112" height="42" rx="8" fill="#f3e9da"/>
+  <text x="1436" y="334" text-anchor="middle" font-size="22" font-weight="800" fill="#9c5f2a" class="num">50%</text>
+  <text x="1055" y="330" class="body">15% → 50%</text>
+  <text x="1055" y="358" class="note">累计上升 35ppt</text>
+
+  <rect x="70" y="815" width="1460" height="120" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="104" y="857" font-size="17" font-weight="600" fill="#d9bf9a">一句话结论</text>
+  <text x="104" y="897" font-size="24" font-weight="800" fill="#f0b860">堆叠图负责全景，独立折线负责关键层的精确变化。</text>
+  <text x="70" y="974" class="axis">注：数据为虚构示例，仅用于验证构成迁移、固定层序、末端直标与关键层抽取规则。</text>
+</svg>

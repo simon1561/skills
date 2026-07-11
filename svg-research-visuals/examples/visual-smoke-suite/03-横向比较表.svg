@@ -3,7 +3,7 @@
     text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
     .title { font-size:48px; font-weight:800; fill:#2f2417; }.sub { font-size:22px; font-weight:400; fill:#6b5c45; }
     .h { font-size:22px; font-weight:700; fill:#2f2417; }.body { font-size:19px; font-weight:400; fill:#4b3e2c; }
-    .num { font-size:24px; font-weight:800; fill:#2e2a25; }.note { font-size:16px; font-weight:400; fill:#7d6e54; }
+    .num { font-size:24px; font-weight:800; fill:#2e2a25; font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1,"lnum" 1; }.note { font-size:16px; font-weight:400; fill:#7d6e54; }
   </style>
   <rect width="1600" height="900" fill="#f8f5ef"/>
   <text x="70" y="75" class="title">比较表示例：相同字段下的横向决策</text>

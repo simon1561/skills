@@ -7,7 +7,7 @@
     .body { font-size:19px; font-weight:400; fill:#4b3e2c; }
     .note { font-size:16px; font-weight:400; fill:#7d6e54; }
     .label { font-size:17px; font-weight:600; fill:#7a4a28; }
-    .num { font-size:25px; font-weight:800; fill:#2e2a25; }
+    .num { font-size:25px; font-weight:800; fill:#2e2a25; font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1,"lnum" 1; }
   </style>
   <rect width="1600" height="900" fill="#f8f5ef"/>
   <text x="70" y="75" class="title">趋势图示例：增速放缓，但仍维持正增长</text>
