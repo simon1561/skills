@@ -18,6 +18,8 @@
   <text x="110" y="225" class="h">毛利率趋势</text>
   <text x="110" y="257" class="note">单位：%｜2021—2026E｜同一会计口径</text>
 
+  <rect x="860" y="300" width="160" height="350" fill="#f3e9da" opacity="0.58"/>
+  <text x="940" y="322" text-anchor="middle" class="note">预测</text>
   <!-- plot grid -->
   <g stroke="#e8ddcc" stroke-width="1">
     <line x1="150" y1="350" x2="1020" y2="350"/><line x1="150" y1="450" x2="1020" y2="450"/>
@@ -32,16 +34,21 @@
   </g>
 
   <!-- reference peers first -->
-  <path d="M220 430 L380 440 L540 460 L700 470 L860 480 L1020 490" fill="none" stroke="#c9bca9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M220 530 L380 520 L540 530 L700 540 L860 530 L1020 520" fill="none" stroke="#d2c6b5" stroke-width="2" stroke-dasharray="7 6" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M220 600 L380 590 L540 580 L700 570 L860 560 L1020 550" fill="none" stroke="#ddd2c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220 430 L380 440 L540 460 L700 470 L860 480" fill="none" stroke="#c9bca9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M860 480 L1020 490" fill="none" stroke="#c9bca9" stroke-width="2" stroke-dasharray="8 7" stroke-linecap="round"/>
+  <path d="M220 530 L380 520 L540 530 L700 540 L860 530" fill="none" stroke="#d2c6b5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M860 530 L1020 520" fill="none" stroke="#d2c6b5" stroke-width="2" stroke-dasharray="8 7" stroke-linecap="round"/>
+  <path d="M220 600 L380 590 L540 580 L700 570 L860 560" fill="none" stroke="#ddd2c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M860 560 L1020 550" fill="none" stroke="#ddd2c2" stroke-width="2" stroke-dasharray="8 7" stroke-linecap="round"/>
 
   <!-- key competitor -->
-  <path d="M220 470 L380 480 L540 490 L700 470 L860 460 L1020 450" fill="none" stroke="#6c7d89" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220 470 L380 480 L540 490 L700 470 L860 460" fill="none" stroke="#6c7d89" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M860 460 L1020 450" fill="none" stroke="#6c7d89" stroke-width="3" stroke-dasharray="9 8" stroke-linecap="round"/>
   <circle cx="1020" cy="450" r="6" fill="#f8f5ef" stroke="#6c7d89" stroke-width="3"/>
 
   <!-- hero on top -->
-  <path d="M220 570 L380 550 L540 520 L700 490 L860 450 L1020 420" fill="none" stroke="#c17a45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220 570 L380 550 L540 520 L700 490 L860 450" fill="none" stroke="#c17a45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M860 450 L1020 420" fill="none" stroke="#c17a45" stroke-width="5" stroke-dasharray="12 9" stroke-linecap="round"/>
   <g fill="#f8f5ef" stroke="#7a4a28" stroke-width="3">
     <circle cx="220" cy="570" r="6"/><circle cx="380" cy="550" r="6"/><circle cx="540" cy="520" r="6"/>
     <circle cx="700" cy="490" r="6"/><circle cx="860" cy="450" r="6"/><circle cx="1020" cy="420" r="9" fill="#f0b860"/>
@@ -73,5 +80,5 @@
 
   <rect x="70" y="780" width="1460" height="70" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
   <text x="104" y="823" font-size="23" font-weight="800" fill="#f0b860">多系列图先决定“谁是主角”；视觉权重必须服从研究问题，而不是平均分配颜色。</text>
-  <text x="70" y="883" class="note">视觉压力测试 12｜虚构数据｜检查系列数量、主角＋参照、末端直标与标签碰撞</text>
+  <text x="70" y="883" class="note">来源示例：公司财报、市场一致预期｜截至 2026-07｜E 为估算｜本图数据为虚构</text>
 </svg>

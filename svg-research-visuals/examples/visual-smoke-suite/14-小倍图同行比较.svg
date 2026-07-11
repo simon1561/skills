@@ -11,7 +11,7 @@
   </style>
   <rect width="1600" height="1000" fill="#f8f5ef"/>
   <text x="70" y="76" class="title">小倍图同行比较：六家公司共享同一把尺子</text>
-  <text x="70" y="116" class="sub">示例数据｜毛利率，2022—2026E｜按2026E从高到低排序｜所有面板共享40%—70%的Y轴</text>
+  <text x="70" y="116" class="sub">示例数据｜毛利率，2022—2026E｜按2026E排序｜共享40%—70%的Y轴｜浅色带＋虚线为预测</text>
   <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
 
   <!-- cards -->
@@ -22,6 +22,12 @@
     <rect x="70" y="490" width="460" height="270" rx="12" class="card"/>
     <rect x="570" y="490" width="460" height="270" rx="12" class="card"/>
     <rect x="1070" y="490" width="460" height="270" rx="12" class="card"/>
+  </g>
+
+  <!-- forecast bands -->
+  <g fill="#f3e9da" opacity="0.62">
+    <rect x="397" y="260" width="93" height="130"/><rect x="897" y="260" width="93" height="130"/><rect x="1397" y="260" width="93" height="130"/>
+    <rect x="397" y="565" width="93" height="130"/><rect x="897" y="565" width="93" height="130"/><rect x="1397" y="565" width="93" height="130"/>
   </g>
 
   <!-- shared grids, row 1 -->
@@ -61,22 +67,20 @@
   </g>
 
   <!-- series -->
-  <g>
-    <path d="M120 325 L212 316 L305 303 L397 286 L490 269" class="series" stroke="#c17a45"/>
-    <path d="M620 312 L712 308 L805 303 L897 295 L990 286" class="series" stroke="#9a8a55"/>
-    <path d="M1120 351 L1212 338 L1305 329 L1397 316 L1490 303" class="series" stroke="#6f7d67"/>
-    <path d="M120 604 L212 608 L305 617 L397 621 L490 625" class="series" stroke="#6c7d89"/>
-    <path d="M620 677 L712 668 L805 660 L897 651 L990 643" class="series" stroke="#8a6f78"/>
-    <path d="M1120 625 L1212 638 L1305 647 L1397 656 L1490 660" class="series" stroke="#9a5048"/>
+  <g stroke="#9a8a55">
+    <path d="M120 325 L212 316 L305 303 L397 286" class="series"/><path d="M397 286 L490 269" class="series" stroke-dasharray="9 7"/>
+    <path d="M620 312 L712 308 L805 303 L897 295" class="series"/><path d="M897 295 L990 286" class="series" stroke-dasharray="9 7"/>
+    <path d="M1120 351 L1212 338 L1305 329 L1397 316" class="series"/><path d="M1397 316 L1490 303" class="series" stroke-dasharray="9 7"/>
+    <path d="M120 604 L212 608 L305 617 L397 621" class="series"/><path d="M397 621 L490 625" class="series" stroke-dasharray="9 7"/>
+    <path d="M620 677 L712 668 L805 660 L897 651" class="series"/><path d="M897 651 L990 643" class="series" stroke-dasharray="9 7"/>
+    <path d="M1120 625 L1212 638 L1305 647 L1397 656" class="series"/><path d="M1397 656 L1490 660" class="series" stroke-dasharray="9 7"/>
   </g>
-  <g>
-    <circle cx="490" cy="269" r="6" fill="#c17a45"/><circle cx="990" cy="286" r="6" fill="#9a8a55"/>
-    <circle cx="1490" cy="303" r="6" fill="#6f7d67"/><circle cx="490" cy="625" r="6" fill="#6c7d89"/>
-    <circle cx="990" cy="643" r="6" fill="#8a6f78"/><circle cx="1490" cy="660" r="6" fill="#9a5048"/>
+  <g fill="#9a8a55">
+    <circle cx="490" cy="269" r="6"/><circle cx="990" cy="286" r="6"/><circle cx="1490" cy="303" r="6"/>
+    <circle cx="490" cy="625" r="6"/><circle cx="990" cy="643" r="6"/><circle cx="1490" cy="660" r="6"/>
   </g>
 
-  <rect x="70" y="815" width="1460" height="120" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
-  <text x="104" y="857" font-size="17" font-weight="600" fill="#d9bf9a">一句话结论</text>
-  <text x="104" y="897" font-size="24" font-weight="800" fill="#f0b860">小倍图不是六张各自缩放的小图；共享尺度，才使水平与斜率真正可比。</text>
-  <text x="70" y="974" class="axis">注：数据为虚构示例，仅用于验证小倍图的共享坐标轴、排序和末端直标规则。</text>
+  <rect x="70" y="835" width="1460" height="100" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="104" y="895" font-size="24" font-weight="800" fill="#f0b860">小倍图不是六张各自缩放的小图；共享尺度，才使水平与斜率真正可比。</text>
+  <text x="70" y="974" class="axis">来源示例：公司财报、市场一致预期｜截至 2026-07｜E 为估算｜本图数据为虚构</text>
 </svg>

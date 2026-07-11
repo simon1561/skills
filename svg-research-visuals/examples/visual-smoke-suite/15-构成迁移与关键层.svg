@@ -22,6 +22,8 @@
   <text x="1055" y="262" class="note">独立折线｜精确读取自身变化</text>
 
   <!-- left chart grid -->
+  <rect x="720" y="300" width="150" height="400" fill="#f3e9da" opacity="0.58"/>
+  <text x="795" y="288" text-anchor="middle" class="note">预测</text>
   <g class="grid">
     <path d="M120 300H875 M120 400H875 M120 500H875 M120 600H875 M120 700H875"/>
   </g>
@@ -35,6 +37,7 @@
   <path d="M120 420 L270 400 L420 380 L570 360 L720 348 L870 340 L870 396 L720 416 L570 440 L420 468 L270 496 L120 520 Z" fill="#6f7d67"/>
   <path d="M120 340 L270 332 L420 328 L570 320 L720 316 L870 316 L870 340 L720 348 L570 360 L420 380 L270 400 L120 420 Z" fill="#6c7d89"/>
   <path d="M120 300 L270 300 L420 300 L570 300 L720 300 L870 300 L870 316 L720 316 L570 320 L420 328 L270 332 L120 340 Z" fill="#8a6f78"/>
+  <line x1="720" y1="300" x2="720" y2="700" stroke="#f8f5ef" stroke-width="2.5" stroke-dasharray="8 7" opacity="0.9"/>
 
   <!-- x labels -->
   <g class="axis num" text-anchor="middle">
@@ -52,27 +55,29 @@
   </g>
 
   <!-- right chart -->
+  <rect x="1394" y="300" width="76" height="400" fill="#f3e9da" opacity="0.58"/>
+  <text x="1432" y="288" text-anchor="middle" class="note">预测</text>
   <g class="grid">
     <path d="M1090 300H1470 M1090 433H1470 M1090 567H1470 M1090 700H1470"/>
   </g>
   <g class="axis num" text-anchor="end">
     <text x="1080" y="305">60%</text><text x="1080" y="438">40%</text><text x="1080" y="572">20%</text><text x="1080" y="705">0%</text>
   </g>
-  <path d="M1090 600 L1166 567 L1242 520 L1318 467 L1394 413 L1470 367" fill="none" stroke="#c17a45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1090 600 L1166 567 L1242 520 L1318 467 L1394 413" fill="none" stroke="#c17a45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1394 413 L1470 367" fill="none" stroke="#c17a45" stroke-width="5" stroke-dasharray="11 8" stroke-linecap="round"/>
   <g fill="#c17a45">
     <circle cx="1090" cy="600" r="6"/><circle cx="1166" cy="567" r="6"/><circle cx="1242" cy="520" r="6"/>
     <circle cx="1318" cy="467" r="6"/><circle cx="1394" cy="413" r="6"/><circle cx="1470" cy="367" r="7"/>
   </g>
   <g class="axis num" text-anchor="middle">
-    <text x="1090" y="730">2021</text><text x="1242" y="730">2023</text><text x="1394" y="730">2025</text><text x="1470" y="730">26E</text>
+    <text x="1090" y="730">2021</text><text x="1242" y="730">2023</text><text x="1394" y="730">2025</text><text x="1470" y="730">2026E</text>
   </g>
   <rect x="1380" y="305" width="112" height="42" rx="8" fill="#f3e9da"/>
   <text x="1436" y="334" text-anchor="middle" font-size="22" font-weight="800" fill="#9c5f2a" class="num">50%</text>
   <text x="1055" y="330" class="body">15% → 50%</text>
   <text x="1055" y="358" class="note">累计上升 35ppt</text>
 
-  <rect x="70" y="815" width="1460" height="120" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
-  <text x="104" y="857" font-size="17" font-weight="600" fill="#d9bf9a">一句话结论</text>
-  <text x="104" y="897" font-size="24" font-weight="800" fill="#f0b860">堆叠图负责全景，独立折线负责关键层的精确变化。</text>
-  <text x="70" y="974" class="axis">注：数据为虚构示例，仅用于验证构成迁移、固定层序、末端直标与关键层抽取规则。</text>
+  <rect x="70" y="835" width="1460" height="100" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="104" y="895" font-size="24" font-weight="800" fill="#f0b860">堆叠图负责全景，独立折线负责关键层的精确变化。</text>
+  <text x="70" y="974" class="axis">来源示例：公司财报、市场一致预期｜截至 2026-07｜E 为估算｜本图数据为虚构</text>
 </svg>

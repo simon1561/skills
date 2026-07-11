@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">赔率散点：高预期回报不等于高确定性</title>
+  <desc id="desc">用虚构的十家公司数据演示真实坐标散点图，横轴为预期回报，纵轴为置信度，并展示业务阈值、中位数分割线和密集标签引导线。</desc>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
+    .card{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:2}.h{font-size:27px;font-weight:800;fill:#9c5f2a}
+    .body{font-size:19px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
+    .axis{font-size:15px;font-weight:400;fill:#7d6e54}.label{font-size:16px;font-weight:600;fill:#3d3122}
+    .num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+  </style>
+  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <text x="70" y="76" class="title">赔率散点：高预期回报不等于高确定性</text>
+  <text x="70" y="116" class="sub">示例数据｜十家公司｜横轴为未来三年预期回报，纵轴为研究置信度｜点大小不承载第三变量</text>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+
+  <rect x="70" y="185" width="1050" height="595" rx="12" class="card"/>
+  <rect x="1160" y="185" width="370" height="595" rx="12" class="card"/>
+  <text x="105" y="230" class="h">预期回报 × 置信度</text>
+  <text x="1195" y="230" class="h">阈值与标签规则</text>
+
+  <!-- plot background and threshold quadrant -->
+  <rect x="150" y="270" width="970" height="450" fill="#fbf7f0"/>
+  <rect x="635" y="270" width="485" height="225" fill="#f3eadb"/>
+  <g stroke="#e3d4bd" stroke-width="1.5">
+    <path d="M150 270H1120 M150 360H1120 M150 450H1120 M150 540H1120 M150 630H1120 M150 720H1120"/>
+    <path d="M150 270V720 M344 270V720 M538 270V720 M732 270V720 M926 270V720 M1120 270V720"/>
+  </g>
+  <line x1="635" y1="270" x2="635" y2="720" stroke="#9a8a55" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <line x1="150" y1="495" x2="1120" y2="495" stroke="#6c7d89" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <text x="645" y="292" class="note">15% 目标回报门槛</text>
+  <text x="1105" y="486" text-anchor="end" class="note">65分｜样本中位数</text>
+  <text x="1095" y="304" text-anchor="end" font-size="17" font-weight="700" fill="#9c5f2a">高回报 / 高置信度</text>
+
+  <!-- axes -->
+  <g class="axis num" text-anchor="middle">
+    <text x="150" y="750">-10%</text><text x="344" y="750">0%</text><text x="538" y="750">10%</text>
+    <text x="732" y="750">20%</text><text x="926" y="750">30%</text><text x="1120" y="750">40%</text>
+  </g>
+  <g class="axis num" text-anchor="end">
+    <text x="138" y="725">40</text><text x="138" y="635">50</text><text x="138" y="545">60</text><text x="138" y="455">70</text><text x="138" y="365">80</text><text x="138" y="275">90</text>
+  </g>
+  <text x="635" y="772" text-anchor="middle" class="axis">未来三年预期回报</text>
+  <text x="88" y="500" text-anchor="middle" class="axis" transform="rotate(-90 88 500)">研究置信度（0—100分）</text>
+
+  <!-- points -->
+  <g>
+    <circle cx="926" cy="342" r="10" fill="#c17a45" stroke="#7a4a28" stroke-width="2.5"/>
+    <circle cx="771" cy="405" r="9" fill="#6c7d89"/>
+    <circle cx="1023" cy="540" r="8" fill="#9a8a55"/><circle cx="635" cy="450" r="8" fill="#9a8a55"/>
+    <circle cx="538" cy="360" r="8" fill="#9a8a55"/><circle cx="441" cy="585" r="8" fill="#9a8a55"/>
+    <circle cx="829" cy="612" r="8" fill="#9a8a55"/><circle cx="247" cy="468" r="8" fill="#9a8a55"/>
+    <circle cx="693" cy="495" r="8" fill="#9a8a55"/><circle cx="732" cy="486" r="8" fill="#9a8a55"/>
+  </g>
+
+  <!-- labels; dense pair uses leaders -->
+  <g class="label num">
+    <text x="942" y="333" fill="#7a4a28">公司 A　30% / 82</text>
+    <text x="787" y="396" fill="#5b6d78">公司 B　22% / 75</text>
+    <text x="1039" y="533">公司 C</text><text x="651" y="441">公司 D</text><text x="554" y="351">公司 E</text>
+    <text x="457" y="608">公司 F</text><text x="845" y="635">公司 G</text><text x="263" y="459">公司 H</text>
+  </g>
+  <g stroke="#8b7e6b" stroke-width="1.5" fill="none">
+    <path d="M693 495 L665 520 L635 520"/><path d="M732 486 L760 462 L790 462"/>
+  </g>
+  <g class="label num"><text x="630" y="525" text-anchor="end">公司 I</text><text x="796" y="467">公司 J</text></g>
+
+  <!-- side explanation -->
+  <line x1="1195" y1="255" x2="1495" y2="255" stroke="#e3d4bd" stroke-width="1.5"/>
+  <text x="1195" y="305" class="body">横向分割：样本中位数</text>
+  <text x="1195" y="339" class="note">用于说明相对研究置信度</text>
+  <text x="1195" y="395" class="body">纵向分割：业务门槛</text>
+  <text x="1195" y="429" class="note">15%为本例预设的目标回报</text>
+  <text x="1195" y="485" class="body">密集区不移动数据点</text>
+  <text x="1195" y="519" class="note">标签换向，并用短引导线连接</text>
+  <rect x="1195" y="575" width="300" height="130" rx="10" fill="#f3e9da"/>
+  <text x="1220" y="614" font-size="21" font-weight="700" fill="#2f2417">读图重点</text>
+  <text x="1220" y="650" class="body">公司A赔率与置信度兼具；</text>
+  <text x="1220" y="682" class="body">公司C高赔率但置信度偏低。</text>
+
+  <rect x="70" y="835" width="1460" height="100" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="104" y="895" font-size="24" font-weight="800" fill="#f0b860">散点图展示的是取舍关系；阈值依据和标签避让不能改变真实数据位置。</text>
+  <text x="70" y="974" class="axis">来源示例：公司财报、市场一致预期、内部研究评分｜截至 2026-07｜本图数据为虚构</text>
+</svg>
