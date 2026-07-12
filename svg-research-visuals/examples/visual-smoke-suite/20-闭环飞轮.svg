@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">闭环飞轮：平台规模优势如何自我强化</title>
+  <desc id="desc">用虚构平台案例演示需求池化、利用率、单位成本、客户规模、数据集成、高层服务与再投资之间的闭环，并明确飞轮断点。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L10 5 L0 10 Z" fill="#a9793f"/></marker>
+  </defs>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
+    .h{font-size:23px;font-weight:800;fill:#9c5f2a}.body{font-size:18px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
+    .node{fill:#fdfaf5;stroke:#cfa873;stroke-width:2}
+  </style>
+  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <text x="70" y="76" class="title">闭环飞轮：平台规模优势如何自我强化</text>
+  <text x="70" y="116" class="sub">虚构案例｜返回边必须写清反馈媒介；断点单独呈现，不把循环本身包装成必然结果</text>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+
+  <g fill="none" stroke="#a9793f" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M990 235 C1045 245 1080 270 1115 305"/>
+    <path d="M1280 415 C1320 445 1320 485 1280 515"/>
+    <path d="M1080 595 C1035 635 1005 660 980 680"/>
+    <path d="M620 700 C565 690 530 650 500 610"/>
+    <path d="M300 515 C265 480 265 445 305 415"/>
+    <path d="M500 325 C545 280 575 255 610 240"/>
+  </g>
+
+  <rect x="430" y="198" width="160" height="32" rx="16" fill="#f3e9da"/>
+  <text x="510" y="220" text-anchor="middle" class="note" fill="#94612f">现金流再投资</text>
+
+  <rect x="610" y="185" width="380" height="100" rx="14" class="node"/>
+  <text x="800" y="225" text-anchor="middle" class="h">需求池化</text>
+  <text x="800" y="258" text-anchor="middle" class="body">客户波峰错开，容量按总量配置</text>
+
+  <rect x="1080" y="305" width="400" height="110" rx="14" class="node"/>
+  <text x="1280" y="347" text-anchor="middle" class="h">利用率提高</text>
+  <text x="1280" y="380" text-anchor="middle" class="body">固定投入被更多工作负载摊薄</text>
+
+  <rect x="1080" y="515" width="400" height="110" rx="14" class="node"/>
+  <text x="1280" y="557" text-anchor="middle" class="h">单位成本下降</text>
+  <text x="1280" y="590" text-anchor="middle" class="body">采购、调度与能源效率形成优势</text>
+
+  <rect x="610" y="665" width="380" height="100" rx="14" class="node"/>
+  <text x="800" y="705" text-anchor="middle" class="h">更多客户进入</text>
+  <text x="800" y="738" text-anchor="middle" class="body">价格与产品改善扩大规模</text>
+
+  <rect x="120" y="515" width="400" height="110" rx="14" class="node"/>
+  <text x="320" y="557" text-anchor="middle" class="h">数据与集成加深</text>
+  <text x="320" y="590" text-anchor="middle" class="body">迁移成本上升，关系不再只看价格</text>
+
+  <rect x="120" y="305" width="400" height="110" rx="14" class="node"/>
+  <text x="320" y="347" text-anchor="middle" class="h">迁往高层服务</text>
+  <text x="320" y="380" text-anchor="middle" class="body">产品组合改善，现金流支持再投入</text>
+
+  <circle cx="800" cy="475" r="120" fill="#2e2a25" stroke="#b08d5a" stroke-width="3"/>
+  <text x="800" y="448" text-anchor="middle" font-size="18" font-weight="600" fill="#d9bf9a">共同内核</text>
+  <text x="800" y="490" text-anchor="middle" font-size="28" font-weight="800" fill="#f0b860">重投入</text>
+  <text x="800" y="525" text-anchor="middle" font-size="22" font-weight="700" fill="#f0e8da">× 高运营杠杆</text>
+
+  <rect x="70" y="815" width="1460" height="120" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="858" font-size="24" font-weight="800" fill="#f0b860">飞轮断点：利用率不足、价格战、无法向高层服务迁移</text>
+  <text x="105" y="900" font-size="19" font-weight="400" fill="#f0e8da">任何一个断点都可能让规模只放大低回报投入；飞轮图表达的是条件性机制，不是对结果的保证。</text>
+  <text x="70" y="974" class="note">来源：虚构示例｜仅用于验证闭环方向、返回媒介、箭头避让与断点表达</text>
+</svg>
