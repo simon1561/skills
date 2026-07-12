@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">论证链：高增长为什么没有变成高现金流</title>
+  <desc id="desc">用虚构软件公司数据演示如何区分表面事实、支撑证据、解释机制、经营结果、替代解释和最终估值含义。</desc>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
+    .h{font-size:27px;font-weight:800;fill:#9c5f2a}.h2{font-size:21px;font-weight:700;fill:#2f2417}
+    .body{font-size:18px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
+    .card{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:2}.num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+  </style>
+  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <text x="70" y="76" class="title">论证链：高增长为什么没有变成高现金流</text>
+  <text x="70" y="116" class="sub">示例数据｜虚构软件公司｜把观察、机制、结果和判断分开，避免用一个增长数字替代完整分析</text>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+
+  <!-- opening observation -->
+  <rect x="70" y="180" width="1460" height="100" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="220" font-size="17" font-weight="600" fill="#d9bf9a">表面事实｜2025年同比</text>
+  <text x="105" y="258" font-size="26" font-weight="800" fill="#f0b860" class="num">ARR +28%，但经营现金流仅 +6%——增长与现金兑现明显脱节</text>
+
+  <!-- chain arrows behind cards -->
+  <g fill="none" stroke="#b08d5a" stroke-width="4" stroke-linecap="round">
+    <path d="M490 475H550"/><path d="M1010 475H1070"/>
+  </g>
+  <g fill="#b08d5a"><path d="M550 475 L536 467 L536 483 Z"/><path d="M1070 475 L1056 467 L1056 483 Z"/></g>
+
+  <!-- evidence -->
+  <rect x="70" y="330" width="420" height="290" rx="14" class="card"/>
+  <rect x="95" y="355" width="110" height="34" rx="17" fill="#f3e9da"/>
+  <text x="150" y="379" text-anchor="middle" font-size="16" font-weight="600" fill="#9c5f2a">可验证证据</text>
+  <text x="100" y="430" class="h">现金为什么落后</text>
+  <text x="100" y="478" class="body num">• 应收账款同比 +45%</text>
+  <text x="100" y="516" class="body num">• DSO由48天升至73天</text>
+  <text x="100" y="554" class="body num">• 现金转换率由82%降至61%</text>
+  <text x="100" y="596" class="note">三项指标共同指向营运资本吸收现金</text>
+
+  <!-- mechanism -->
+  <rect x="550" y="330" width="460" height="290" rx="14" class="card"/>
+  <rect x="575" y="355" width="110" height="34" rx="17" fill="#f3e9da"/>
+  <text x="630" y="379" text-anchor="middle" font-size="16" font-weight="600" fill="#9c5f2a">解释机制</text>
+  <text x="580" y="430" class="h">收入确认早于回款</text>
+  <text x="580" y="478" class="body">大客户占比提升，付款条件变长</text>
+  <text x="580" y="516" class="body">实施里程碑确认收入，但现金分期到账</text>
+  <text x="580" y="554" class="body">增长因此需要更多营运资本垫付</text>
+  <text x="580" y="596" class="note">这是因果解释，不是对增长质量的最终定性</text>
+
+  <!-- result -->
+  <rect x="1070" y="330" width="460" height="290" rx="14" class="card"/>
+  <rect x="1095" y="355" width="110" height="34" rx="17" fill="#f3e9da"/>
+  <text x="1150" y="379" text-anchor="middle" font-size="16" font-weight="600" fill="#9c5f2a">经营结果</text>
+  <text x="1100" y="430" class="h">增长质量暂时弱于增速</text>
+  <text x="1100" y="478" class="body">利润表扩张快于现金流量表</text>
+  <text x="1100" y="516" class="body">自由现金流对估值的支撑没有同步增强</text>
+  <text x="1100" y="554" class="body">高ARR增速不能直接推导更高倍数</text>
+  <text x="1100" y="596" class="note">“暂时”保留了后续改善的可能</text>
+
+  <!-- alternative explanation -->
+  <rect x="70" y="665" width="1460" height="92" rx="12" fill="#f4eae7" stroke="#e3cdc7" stroke-width="1.5"/>
+  <rect x="70" y="665" width="8" height="92" fill="#9a5048"/>
+  <text x="105" y="700" class="h2" fill="#8a443c">替代解释与证伪条件</text>
+  <text x="105" y="735" class="body">若应收上升只是新签大客户的短期爬坡，未来两个季度DSO回落、现金转换率恢复，则“增长质量恶化”的判断应下调。</text>
+
+  <!-- conclusion -->
+  <rect x="70" y="805" width="1460" height="130" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="848" font-size="24" font-weight="800" fill="#f0b860">估值含义：先验证现金兑现，再决定是否奖励增长</text>
+  <text x="105" y="888" font-size="19" font-weight="400" fill="#f0e8da">短期应同时看ARR、DSO和自由现金流；只有增长最终转化为现金，收入增速才真正提高内在价值。</text>
+  <text x="70" y="974" class="note">来源：虚构示例｜仅用于验证事实—机制—结果—判断与替代解释的论证结构</text>
+</svg>
