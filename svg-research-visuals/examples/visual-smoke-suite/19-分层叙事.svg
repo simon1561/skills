@@ -10,7 +10,7 @@
   </style>
   <rect width="1600" height="1000" fill="#f8f5ef"/>
   <text x="70" y="76" class="title">分层叙事：监管变化如何穿透平台价值</text>
-  <text x="70" y="116" class="sub">虚构案例｜编号只表示阅读顺序；每一层承担不同认知任务，不用箭头制造并不存在的精确因果</text>
+  <text x="70" y="116" class="sub">虚构案例｜规则变化 → 经营应对 → 利润取舍 → 估值含义；四层逐级展开，但不假定精确因果</text>
   <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
 
   <!-- narrative spine -->
@@ -23,36 +23,24 @@
   <text x="240" y="225" class="h">发生了什么｜平台费率上限与数据审计同时收紧</text>
   <text x="240" y="260" class="body">新规限制核心交易费率，并要求平台解释推荐排序、保存商家申诉记录</text>
   <text x="240" y="289" class="body">直接影响不只是一次性合规支出，而是原有变现方式和运营流程</text>
-  <rect x="1265" y="215" width="225" height="60" rx="9" fill="#f4eae7"/>
-  <text x="1378" y="240" text-anchor="middle" class="h2" fill="#8a443c">第一层任务</text>
-  <text x="1378" y="266" text-anchor="middle" class="note">先区分罚款与规则变化</text>
 
   <!-- layer 2 -->
   <rect x="205" y="335" width="1325" height="120" rx="12" class="band"/>
   <text x="240" y="375" class="h">公司如何应对｜重做变现组合与商家治理</text>
   <text x="240" y="410" class="body">减少高费率促销，增加广告、履约和数据工具等商家服务收入</text>
   <text x="240" y="439" class="body">同步增加审核人员、申诉系统和算法解释能力，降低持续违规风险</text>
-  <rect x="1265" y="365" width="225" height="60" rx="9" fill="#f3e9da"/>
-  <text x="1378" y="390" text-anchor="middle" class="h2">第二层任务</text>
-  <text x="1378" y="416" text-anchor="middle" class="note">说明经营动作，而非跳到结论</text>
 
   <!-- layer 3 -->
   <rect x="205" y="485" width="1325" height="120" rx="12" class="band"/>
   <text x="240" y="525" class="h">产生什么取舍｜近期利润承压，长期信任可能改善</text>
   <text x="240" y="560" class="body">负面：交易费率下降、合规成本上升，新服务变现需要时间</text>
   <text x="240" y="589" class="body">正面：商家申诉更透明、低质供给减少，留存与生态稳定性可能提高</text>
-  <rect x="1265" y="515" width="225" height="60" rx="9" fill="#f4eae7"/>
-  <text x="1378" y="540" text-anchor="middle" class="h2" fill="#8a443c">第三层任务</text>
-  <text x="1378" y="566" text-anchor="middle" class="note">把代价与潜在收益并列</text>
 
   <!-- layer 4 -->
   <rect x="205" y="635" width="1325" height="120" rx="12" class="band"/>
   <text x="240" y="675" class="h">最终意味着什么｜估值取决于新模式能否补回旧利润</text>
   <text x="240" y="710" class="body">短期盈利下修是直接结果；长期价值取决于新服务收入、商家留存和现金转换率</text>
   <text x="240" y="739" class="body">不能只把一次性罚款从净现金扣除，也不能假定所有合规投入都会产生回报</text>
-  <rect x="1265" y="665" width="225" height="60" rx="9" fill="#f3e9da"/>
-  <text x="1378" y="690" text-anchor="middle" class="h2">第四层任务</text>
-  <text x="1378" y="716" text-anchor="middle" class="note">落到可验证的价值判断</text>
 
   <!-- monitoring -->
   <rect x="70" y="805" width="1460" height="130" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>

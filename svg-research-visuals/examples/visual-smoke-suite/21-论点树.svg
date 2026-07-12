@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">论点树：高增长公司是否具备高质量复利基础</title>
+  <desc id="desc">用虚构公司案例演示一个中心判断如何由需求质量、单位经济和资本配置三条分支共同支撑；每条分支均按证据、有限支持和开放风险排列。</desc>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
+    .h{font-size:25px;font-weight:800;fill:#9c5f2a}.h2{font-size:20px;font-weight:700;fill:#2f2417}
+    .body{font-size:18px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
+    .branch{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:2}.pill{fill:#f3e9da}.support{fill:#eef1eb}.risk{fill:#f4eae7}
+    .num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
+  </style>
+  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <text x="70" y="76" class="title">论点树：高增长公司是否具备高质量复利基础</text>
+  <text x="70" y="116" class="sub">虚构案例｜一个中心判断由三条独立路径支撑；每条路径都保留有限推断和开放风险</text>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+
+  <!-- root -->
+  <rect x="70" y="180" width="1460" height="105" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="218" font-size="17" font-weight="600" fill="#d9bf9a">中心判断｜倾向性结论</text>
+  <text x="105" y="258" font-size="25" font-weight="800" fill="#f0b860">公司具备从高增长转向高质量复利的条件，但三条证据链尚未跨周期闭合</text>
+
+  <!-- connectors behind branches -->
+  <g fill="none" stroke="#c9bca9" stroke-width="3" stroke-linecap="round">
+    <path d="M800 285V315H300V335"/>
+    <path d="M800 315V335"/>
+    <path d="M800 315H1300V335"/>
+  </g>
+
+  <!-- branch cards -->
+  <rect x="70" y="335" width="460" height="405" rx="14" class="branch"/>
+  <rect x="570" y="335" width="460" height="405" rx="14" class="branch"/>
+  <rect x="1070" y="335" width="460" height="405" rx="14" class="branch"/>
+
+  <!-- branch 1 -->
+  <text x="105" y="382" class="h">路径一｜需求质量</text>
+  <rect x="105" y="408" width="390" height="88" rx="10" class="pill"/>
+  <text x="130" y="438" class="h2">行为或证据</text>
+  <text x="130" y="470" class="body num">NRR 118%，席位渗透率连续四季上升</text>
+  <rect x="105" y="512" width="390" height="88" rx="10" class="support"/>
+  <text x="130" y="542" class="h2">由此支持</text>
+  <text x="130" y="574" class="body">倾向支持产品已嵌入关键工作流</text>
+  <rect x="105" y="616" width="390" height="92" rx="10" class="risk"/>
+  <rect x="105" y="616" width="7" height="92" rx="3" fill="#9a5048"/>
+  <text x="130" y="646" class="h2" fill="#8a443c">开放风险</text>
+  <text x="130" y="678" class="body">增长仍可能来自促销与一次性扩容</text>
+
+  <!-- branch 2 -->
+  <text x="605" y="382" class="h">路径二｜单位经济</text>
+  <rect x="605" y="408" width="390" height="88" rx="10" class="pill"/>
+  <text x="630" y="438" class="h2">行为或证据</text>
+  <text x="630" y="470" class="body num">毛利率 +8ppt，CAC回收期降至14个月</text>
+  <rect x="605" y="512" width="390" height="88" rx="10" class="support"/>
+  <text x="630" y="542" class="h2">由此支持</text>
+  <text x="630" y="574" class="body">更可能说明规模开始转化为利润</text>
+  <rect x="605" y="616" width="390" height="92" rx="10" class="risk"/>
+  <rect x="605" y="616" width="7" height="92" rx="3" fill="#9a5048"/>
+  <text x="630" y="646" class="h2" fill="#8a443c">开放风险</text>
+  <text x="630" y="678" class="body">股权激励与capex可能仍吸收现金</text>
+
+  <!-- branch 3 -->
+  <text x="1105" y="382" class="h">路径三｜资本配置</text>
+  <rect x="1105" y="408" width="390" height="88" rx="10" class="pill"/>
+  <text x="1130" y="438" class="h2">行为或证据</text>
+  <text x="1130" y="470" class="body">低估时回购，三年未做高溢价并购</text>
+  <rect x="1105" y="512" width="390" height="88" rx="10" class="support"/>
+  <text x="1130" y="542" class="h2">由此支持</text>
+  <text x="1130" y="574" class="body">提高每股价值持续复利的概率</text>
+  <rect x="1105" y="616" width="390" height="92" rx="10" class="risk"/>
+  <rect x="1105" y="616" width="7" height="92" rx="3" fill="#9a5048"/>
+  <text x="1130" y="646" class="h2" fill="#8a443c">开放风险</text>
+  <text x="1130" y="678" class="body">尚未经历下行周期与大型并购考验</text>
+
+  <!-- conclusion -->
+  <rect x="70" y="785" width="1460" height="150" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
+  <text x="105" y="828" font-size="24" font-weight="800" fill="#f0b860">置信度上调条件：三条路径同时改善，而不是单点指标变好</text>
+  <text x="105" y="870" font-size="19" font-weight="400" fill="#f0e8da">需求质量证明收入可持续，单位经济证明增长能转化为现金，资本配置决定现金能否继续提高每股价值。</text>
+  <text x="105" y="905" font-size="17" font-weight="400" fill="#d9bf9a">任一开放风险被验证，先削弱对应分支；若关键分支失效或多条路径同时破裂，整体论点应显著下调。</text>
+  <text x="70" y="974" class="note">来源：虚构示例｜仅用于验证根节点、同字段分支、有限推断与开放风险的论点树结构</text>
+</svg>
