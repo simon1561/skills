@@ -3,18 +3,18 @@
   <desc id="desc">用虚构数据演示折现率与永续增速对每股价值的双变量敏感性，基准格直接锚定，颜色与数值同时表达结果。</desc>
   <style>
     text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
-    .title{font-size:50px;font-weight:800;fill:#2f2417}.sub{font-size:24px;font-weight:400;fill:#6b5c45}
-    .h{font-size:26px;font-weight:700;fill:#2f2417}.body{font-size:20px;font-weight:400;fill:#4b3e2c}
-    .note{font-size:17px;font-weight:400;fill:#7d6e54}.axis{font-size:18px;font-weight:600;fill:#6b5c45}
-    .cell{font-size:22px;font-weight:700;fill:#2e2a25;text-anchor:middle;dominant-baseline:middle}
+    .title{font-size:50px;font-weight:800;fill:#24221e}.sub{font-size:24px;font-weight:400;fill:#68645c}
+    .h{font-size:26px;font-weight:700;fill:#24221e}.body{font-size:20px;font-weight:400;fill:#45433e}
+    .note{font-size:17px;font-weight:400;fill:#77736b}.axis{font-size:18px;font-weight:600;fill:#68645c}
+    .cell{font-size:22px;font-weight:700;fill:#24221e;text-anchor:middle;dominant-baseline:middle}
     .num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
   </style>
-  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <rect width="1600" height="1000" fill="#fbfaf7"/>
   <text x="70" y="80" class="title">估值敏感性矩阵：两个假设共同决定每股价值</text>
   <text x="70" y="122" class="sub">示例数据，仅用于测试双变量矩阵、基准格锚定、双向梯度与数值对齐</text>
-  <line x1="70" y1="153" x2="1530" y2="153" stroke="#dfcdb1" stroke-width="2"/>
+  <line x1="70" y1="153" x2="1530" y2="153" stroke="#dedbd3" stroke-width="2"/>
 
-  <rect x="70" y="188" width="1080" height="680" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
+  <rect x="70" y="188" width="1080" height="680" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="110" y="236" class="h">DCF 每股价值敏感性</text>
   <text x="110" y="269" class="note">单位：美元/股｜基准：WACC 9.0%、永续增速 2.0%</text>
   <text x="668" y="270" class="axis" text-anchor="middle">永续增速 g →</text>
@@ -30,7 +30,7 @@
   </g>
 
   <!-- matrix cells: row 7% -->
-  <g stroke="#f8f5ef" stroke-width="4">
+  <g stroke="#fbfaf7" stroke-width="4">
     <rect x="280" y="320" width="155" height="82" fill="#dfc69e"/><rect x="435" y="320" width="155" height="82" fill="#d9b883"/>
     <rect x="590" y="320" width="155" height="82" fill="#d1aa70"/><rect x="745" y="320" width="155" height="82" fill="#c99d61"/>
     <rect x="900" y="320" width="155" height="82" fill="#bf8d50"/>
@@ -40,7 +40,7 @@
     <rect x="900" y="402" width="155" height="82" fill="#d1aa70"/>
     <!-- row 9% -->
     <rect x="280" y="484" width="155" height="82" fill="#f3e5df"/><rect x="435" y="484" width="155" height="82" fill="#f3e9da"/>
-    <rect x="590" y="484" width="155" height="82" fill="#efe2cd" stroke="#2e2a25" stroke-width="3"/>
+    <rect x="590" y="484" width="155" height="82" fill="#efe2cd" stroke="#24221e" stroke-width="3"/>
     <rect x="745" y="484" width="155" height="82" fill="#e8d5b8"/><rect x="900" y="484" width="155" height="82" fill="#e4cda9"/>
     <!-- row 10% -->
     <rect x="280" y="566" width="155" height="82" fill="#edd9d4"/><rect x="435" y="566" width="155" height="82" fill="#f0dfda"/>
@@ -58,11 +58,12 @@
   <g class="cell num">
     <text x="357.5" y="361">156</text><text x="512.5" y="361">166</text><text x="667.5" y="361">178</text><text x="822.5" y="361">192</text><text x="977.5" y="361">208</text>
     <text x="357.5" y="443">138</text><text x="512.5" y="443">146</text><text x="667.5" y="443">156</text><text x="822.5" y="443">167</text><text x="977.5" y="443">180</text>
-    <text x="357.5" y="525">123</text><text x="512.5" y="525">129</text><text x="667.5" y="525">136</text><text x="822.5" y="525">144</text><text x="977.5" y="525">153</text>
+    <text x="357.5" y="525">123</text><text x="512.5" y="525">129</text><text x="822.5" y="525">144</text><text x="977.5" y="525">153</text>
     <text x="357.5" y="607">111</text><text x="512.5" y="607">116</text><text x="667.5" y="607">121</text><text x="822.5" y="607">127</text><text x="977.5" y="607">134</text>
     <text x="357.5" y="689">101</text><text x="512.5" y="689">105</text><text x="667.5" y="689">109</text><text x="822.5" y="689">114</text><text x="977.5" y="689">120</text>
   </g>
-  <text x="667.5" y="552" font-size="13" font-weight="600" fill="#7a4a28" text-anchor="middle">基准</text>
+  <text x="667.5" y="518" text-anchor="middle" class="cell num">136</text>
+  <text x="667.5" y="545" font-size="13" font-weight="600" fill="#7a4a28" text-anchor="middle">基准</text>
 
   <!-- attached color bar -->
   <text x="280" y="778" class="note">低于基准</text>
@@ -73,25 +74,25 @@
   <text x="280" y="820" class="note">色彩提供方向，格内数值提供精确读数；二者缺一不可。</text>
 
   <!-- right interpretation panel -->
-  <rect x="1180" y="188" width="350" height="680" rx="14" fill="#fdfaf5" stroke="#c17a45" stroke-width="2"/>
+  <rect x="1180" y="188" width="350" height="680" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="1215" y="236" class="h">基准情景</text>
-  <text x="1215" y="296" font-size="46" font-weight="800" fill="#2e2a25" class="num">136 美元</text>
+  <text x="1215" y="296" font-size="46" font-weight="800" fill="#24221e" class="num">136 美元</text>
   <text x="1215" y="332" class="body">WACC 9.0%｜g 2.0%</text>
-  <line x1="1215" y1="364" x2="1495" y2="364" stroke="#e3d4bd" stroke-width="1.5"/>
-  <rect x="1215" y="398" width="280" height="112" rx="10" fill="#f4eae7"/>
-  <text x="1240" y="436" class="h" fill="#8a443c">下行情景</text>
-  <text x="1240" y="472" class="body">折现率上升，或永续增速下降</text>
+  <line x1="1215" y1="364" x2="1495" y2="364" stroke="#dedbd3" stroke-width="1.5"/>
+  <rect x="1215" y="398" width="280" height="112" rx="10" fill="#edd9d4"/>
+  <text x="1240" y="436" class="h" fill="#8f5a4d">下行情景</text>
+  <text x="1240" y="472" class="body">折现率↑或永续增速↓</text>
   <text x="1240" y="500" class="note">赭红表示结果低于基准</text>
   <rect x="1215" y="532" width="280" height="112" rx="10" fill="#f3e9da"/>
   <text x="1240" y="570" class="h" fill="#7a4a28">上行情景</text>
-  <text x="1240" y="606" class="body">折现率下降，或永续增速上升</text>
+  <text x="1240" y="606" class="body">折现率↓或永续增速↑</text>
   <text x="1240" y="634" class="note">赭石表示结果高于基准</text>
   <text x="1215" y="704" class="body">• 基准格有双重描边</text>
   <text x="1215" y="740" class="body">• 横纵轴写清单位</text>
   <text x="1215" y="776" class="body">• 色标紧贴矩阵</text>
   <text x="1215" y="812" class="body">• 每格直接写数值</text>
 
-  <rect x="70" y="900" width="1460" height="60" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
-  <text x="104" y="938" font-size="22" font-weight="800" fill="#f0b860">敏感性矩阵的价值不是制造精确感，而是暴露估值对关键假设的依赖程度。</text>
+  <rect x="70" y="900" width="1460" height="60" rx="12" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="104" y="938" font-size="22" font-weight="800" fill="#9c5f2a">敏感性矩阵的价值不是制造精确感，而是暴露估值对关键假设的依赖程度。</text>
   <text x="70" y="988" class="note">视觉压力测试 13｜虚构数据｜1600×1000 完整研究页｜检查矩阵、梯度、基准格与等宽数字</text>
 </svg>

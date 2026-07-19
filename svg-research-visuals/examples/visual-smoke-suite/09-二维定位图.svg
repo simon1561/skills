@@ -1,26 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">二维定位图：坐标有定义，位置才有意义</title>
+  <desc id="desc">展示定性二维定位图的轴定义、象限解释和标签避让，避免用位置制造伪精确。</desc>
   <style>
     text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
-    .title { font-size:48px; font-weight:800; fill:#2f2417; }.sub { font-size:22px; font-weight:400; fill:#6b5c45; }
-    .h { font-size:23px; font-weight:700; fill:#2f2417; }.body { font-size:19px; font-weight:400; fill:#4b3e2c; }.note { font-size:16px; font-weight:400; fill:#7d6e54; }
+    .title { font-size:48px; font-weight:800; fill:#24221e; }.sub { font-size:22px; font-weight:400; fill:#68645c; }
+    .h { font-size:23px; font-weight:700; fill:#24221e; }.body { font-size:19px; font-weight:400; fill:#45433e; }.note { font-size:16px; font-weight:400; fill:#77736b; }
   </style>
-  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <rect width="1600" height="900" fill="#fbfaf7"/>
   <text x="70" y="75" class="title">二维定位图：坐标有定义，位置才有意义</text>
   <text x="70" y="116" class="sub">示例内容，仅测试二维轴、象限解释、标签避让与不制造伪精确</text>
-  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
-  <rect x="70" y="190" width="1050" height="610" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dedbd3" stroke-width="2"/>
+  <rect x="70" y="190" width="1050" height="610" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="110" y="235" class="h">业务组合的定性定位</text><text x="110" y="266" class="note">横轴：增长潜力 ｜ 纵轴：盈利能力 ｜ 位置是相对判断，不是精确评分</text>
-  <rect x="200" y="315" width="760" height="390" fill="#f9f4ea"/>
-  <rect x="580" y="315" width="380" height="195" fill="#f3eadb"/><rect x="200" y="510" width="380" height="195" fill="#f5eee3"/>
-  <g stroke="#9a8a55" stroke-width="2"><line x1="200" y1="705" x2="980" y2="705"/><line x1="200" y1="725" x2="200" y2="295"/><line x1="580" y1="315" x2="580" y2="705" stroke-dasharray="8 8"/><line x1="200" y1="510" x2="960" y2="510" stroke-dasharray="8 8"/></g>
+  <rect x="200" y="315" width="760" height="390" fill="#fbf8f2"/>
+  <rect x="580" y="315" width="380" height="195" fill="#f4ecdb"/><rect x="200" y="510" width="380" height="195" fill="#f6f0e5"/>
+  <g stroke="#a9a69e" stroke-width="2"><line x1="200" y1="705" x2="980" y2="705"/><line x1="200" y1="725" x2="200" y2="295"/></g>
+  <g stroke="#c9bca9" stroke-width="2"><line x1="580" y1="315" x2="580" y2="705" stroke-dasharray="8 8"/><line x1="200" y1="510" x2="960" y2="510" stroke-dasharray="8 8"/></g>
   <g class="note"><text x="200" y="748">低增长潜力</text><text x="850" y="748">高增长潜力</text><text x="105" y="700">低盈利</text><text x="105" y="335">高盈利</text></g>
-  <g class="note" fill="#8b572a"><text x="225" y="345">稳健但慢</text><text x="815" y="345">高质量增长</text><text x="225" y="682">低回报风险</text><text x="815" y="682">高增长投入期</text></g>
-  <g><circle cx="755" cy="415" r="18" fill="#7a4a28"/><circle cx="445" cy="400" r="18" fill="#94612f"/><circle cx="760" cy="605" r="18" fill="#c17a45"/><circle cx="385" cy="600" r="18" fill="#9a5048"/></g>
+  <g class="note" fill="#9c5f2a"><text x="225" y="345">稳健但慢</text><text x="815" y="345">高质量增长</text><text x="225" y="682">低回报风险</text><text x="815" y="682">高增长投入期</text></g>
+  <g fill="#c17a45"><circle cx="755" cy="415" r="18"/><circle cx="445" cy="400" r="18"/><circle cx="760" cy="605" r="18"/><circle cx="385" cy="600" r="18"/></g>
   <g class="body"><text x="785" y="421">业务 A</text><text x="475" y="406">业务 B</text><text x="790" y="611">业务 C</text><text x="415" y="606">业务 D</text></g>
-  <rect x="1160" y="190" width="370" height="610" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
-  <text x="1200" y="235" class="h">使用边界</text><line x1="1200" y1="258" x2="1490" y2="258" stroke="#e3d4bd" stroke-width="1.5"/>
+  <rect x="1160" y="190" width="370" height="610" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
+  <text x="1200" y="235" class="h">使用边界</text><line x1="1200" y1="258" x2="1490" y2="258" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="1200" y="318" class="body">• 两个轴必须可解释</text><text x="1200" y="360" class="body">• 点位只表达相对关系</text><text x="1200" y="402" class="body">• 标签不能互相遮挡</text><text x="1200" y="444" class="body">• 不用伪精确刻度</text>
-  <rect x="1200" y="545" width="290" height="126" rx="10" fill="#2e2a25"/>
-  <text x="1230" y="588" font-size="21" font-weight="800" fill="#f0b860">关键判断</text><text x="1230" y="624" font-size="18" font-weight="400" fill="#f0e8da">位置用于讨论，</text><text x="1230" y="652" font-size="18" font-weight="400" fill="#f0e8da">不替代真实数据。</text>
+  <rect x="1200" y="545" width="290" height="126" rx="10" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="1230" y="588" font-size="21" font-weight="800" fill="#9c5f2a">关键判断</text><text x="1230" y="624" font-size="18" font-weight="400" fill="#45433e">位置用于讨论，</text><text x="1230" y="652" font-size="18" font-weight="400" fill="#45433e">不替代真实数据。</text>
   <text x="70" y="852" class="note">视觉压力测试 09｜检查轴定义、象限逻辑、标签避让和定性边界是否清楚</text>
 </svg>

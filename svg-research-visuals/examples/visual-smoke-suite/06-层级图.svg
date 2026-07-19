@@ -1,29 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">层级图：从总目标到可执行抓手</title>
+  <desc id="desc">展示一个总目标如何分解为多个一级方向与可执行抓手，并保持父子关系清楚。</desc>
   <style>
     text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
-    .title { font-size:48px; font-weight:800; fill:#2f2417; }.sub { font-size:22px; font-weight:400; fill:#6b5c45; }
-    .h { font-size:23px; font-weight:700; fill:#2f2417; }.body { font-size:18px; font-weight:400; fill:#4b3e2c; }.note { font-size:16px; font-weight:400; fill:#7d6e54; }
+    .title { font-size:48px; font-weight:800; fill:#24221e; }.sub { font-size:22px; font-weight:400; fill:#68645c; }
+    .h { font-size:23px; font-weight:700; fill:#24221e; }.body { font-size:18px; font-weight:400; fill:#45433e; }.note { font-size:16px; font-weight:400; fill:#77736b; }
   </style>
-  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <rect width="1600" height="900" fill="#fbfaf7"/>
   <text x="70" y="75" class="title">层级图示例：从总目标到可执行抓手</text>
   <text x="70" y="116" class="sub">示例内容，仅测试树状结构的父子关系、连接层级与节点密度</text>
-  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dedbd3" stroke-width="2"/>
 
   <!-- connectors first, behind nodes -->
-  <g fill="none" stroke="#b7a38a" stroke-width="3"><path d="M 800 307 L 800 360 L 350 360 L 350 420"/><path d="M 800 307 L 800 360 L 800 360 L 800 420"/><path d="M 800 307 L 800 360 L 1250 360 L 1250 420"/>
+  <g fill="none" stroke="#b08d5a" stroke-width="3"><path d="M 800 307 L 800 360 L 350 360 L 350 420"/><path d="M 800 307 L 800 360 L 800 360 L 800 420"/><path d="M 800 307 L 800 360 L 1250 360 L 1250 420"/>
   <path d="M 350 540 L 350 592 L 240 592 L 240 650"/><path d="M 350 540 L 350 592 L 460 592 L 460 650"/>
   <path d="M 800 540 L 800 592 L 690 592 L 690 650"/><path d="M 800 540 L 800 592 L 910 592 L 910 650"/>
   <path d="M 1250 540 L 1250 592 L 1140 592 L 1140 650"/><path d="M 1250 540 L 1250 592 L 1360 592 L 1360 650"/></g>
-  <rect x="610" y="205" width="380" height="102" rx="16" fill="#2e2a25" stroke="#b08d5a" stroke-width="2.5"/>
-  <text x="800" y="250" text-anchor="middle" font-size="25" font-weight="800" fill="#f0b860">总目标</text>
-  <text x="800" y="282" text-anchor="middle" font-size="20" font-weight="400" fill="#f0e8da">提升长期价值创造能力</text>
-  <g fill="#fdfaf5" stroke="#c8b695" stroke-width="2"><rect x="210" y="420" width="280" height="120" rx="14"/><rect x="660" y="420" width="280" height="120" rx="14"/><rect x="1110" y="420" width="280" height="120" rx="14"/></g>
+  <rect x="610" y="205" width="380" height="102" rx="16" fill="#fff8e4" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="800" y="250" text-anchor="middle" font-size="25" font-weight="800" fill="#9c5f2a">总目标</text>
+  <text x="800" y="282" text-anchor="middle" font-size="20" font-weight="400" fill="#45433e">提升长期价值创造能力</text>
+  <g fill="#fffdf9" stroke="#dedbd3" stroke-width="2"><rect x="210" y="420" width="280" height="120" rx="14"/><rect x="660" y="420" width="280" height="120" rx="14"/><rect x="1110" y="420" width="280" height="120" rx="14"/></g>
   <g fill="#c17a45"><rect x="210" y="420" width="8" height="120" rx="4"/><rect x="660" y="420" width="8" height="120" rx="4"/><rect x="1110" y="420" width="8" height="120" rx="4"/></g>
-  <g class="h" text-anchor="middle"><text x="350" y="466">经营效率</text><text x="800" y="466">用户价值</text><text x="1250" y="466">资本纪律</text></g>
-  <g class="body" text-anchor="middle"><text x="350" y="503">流程与供给优化</text><text x="800" y="503">体验与留存改善</text><text x="1250" y="503">投入与回报匹配</text></g>
-  <g fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"><rect x="145" y="650" width="190" height="94" rx="12"/><rect x="365" y="650" width="190" height="94" rx="12"/><rect x="595" y="650" width="190" height="94" rx="12"/><rect x="815" y="650" width="190" height="94" rx="12"/><rect x="1045" y="650" width="190" height="94" rx="12"/><rect x="1265" y="650" width="190" height="94" rx="12"/></g>
+  <g class="h" text-anchor="middle"><text x="350" y="470">经营效率</text><text x="800" y="470">用户价值</text><text x="1250" y="470">资本纪律</text></g>
+  <g class="body" text-anchor="middle"><text x="350" y="507">流程与供给优化</text><text x="800" y="507">体验与留存改善</text><text x="1250" y="507">投入与回报匹配</text></g>
+  <g fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"><rect x="145" y="650" width="190" height="94" rx="12"/><rect x="365" y="650" width="190" height="94" rx="12"/><rect x="595" y="650" width="190" height="94" rx="12"/><rect x="815" y="650" width="190" height="94" rx="12"/><rect x="1045" y="650" width="190" height="94" rx="12"/><rect x="1265" y="650" width="190" height="94" rx="12"/></g>
   <g class="body" text-anchor="middle"><text x="240" y="707">履约效率</text><text x="460" y="707">供给质量</text><text x="690" y="707">转化率</text><text x="910" y="707">复购率</text><text x="1140" y="707">项目筛选</text><text x="1360" y="707">回报复盘</text></g>
-  <rect x="70" y="790" width="1460" height="58" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
-  <text x="105" y="829" font-size="23" font-weight="800" fill="#f0b860">层级图先让读者看清“归属”，再展示具体节点；连接线必须位于节点之后。</text>
+  <rect x="70" y="790" width="1460" height="58" rx="12" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="105" y="829" font-size="23" font-weight="800" fill="#9c5f2a">层级图先让读者看清“归属”，再展示具体节点；连接线先绘制、置于节点下层。</text>
   <text x="70" y="875" class="note">视觉压力测试 06｜检查父子层级、连接线遮挡、节点密度和自上而下的阅读方向</text>
 </svg>

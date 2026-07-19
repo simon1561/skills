@@ -3,30 +3,30 @@
   <desc id="desc">用虚构数据演示六家公司共享横轴的估值区间图，横条表示下行至上行价值，圆点为基准价值，菱形为现价，并按基准上行空间排序。</desc>
   <style>
     text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
-    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
-    .card{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:2}.h{font-size:23px;font-weight:700;fill:#2f2417}
-    .body{font-size:18px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
-    .axis{font-size:15px;font-weight:400;fill:#7d6e54}.up{font-size:18px;font-weight:800;fill:#7a4a28}
+    .title{font-size:48px;font-weight:800;fill:#24221e}.sub{font-size:23px;font-weight:400;fill:#68645c}
+    .card{fill:#fffdf9;stroke:#dedbd3;stroke-width:2}.h{font-size:23px;font-weight:700;fill:#24221e}
+    .body{font-size:18px;font-weight:400;fill:#45433e}.note{font-size:15px;font-weight:400;fill:#77736b}
+    .axis{font-size:15px;font-weight:400;fill:#77736b}.up{font-size:18px;font-weight:800;fill:#7a4a28}
     .num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
   </style>
-  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <rect width="1600" height="1000" fill="#fbfaf7"/>
   <text x="70" y="76" class="title">估值区间图：统一横轴比较赔率与不确定性</text>
   <text x="70" y="116" class="sub">示例数据｜每股价值（元）｜按基准价值相对现价的上行空间排序｜区间宽度表达估值不确定性</text>
-  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#dedbd3" stroke-width="2"/>
 
   <rect x="70" y="185" width="1460" height="595" rx="12" class="card"/>
   <text x="105" y="230" class="h">标的</text><text x="250" y="230" class="h">基准上行</text>
   <g transform="translate(775 215)">
     <line x1="0" y1="0" x2="58" y2="0" stroke="#c08c52" stroke-width="10" stroke-linecap="round"/>
     <text x="72" y="6" class="note">估值区间</text>
-    <circle cx="190" cy="0" r="7" fill="#c17a45" stroke="#7a4a28" stroke-width="2"/>
+    <circle cx="190" cy="0" r="7" fill="#c17a45"/>
     <text x="206" y="6" class="note">基准价值</text>
-    <path d="M330 -8 L338 0 L330 8 L322 0 Z" fill="#2e2a25"/>
+    <path d="M330 -8 L338 0 L330 8 L322 0 Z" fill="#24221e"/>
     <text x="348" y="6" class="note">现价</text>
   </g>
 
   <!-- shared plot grid -->
-  <g stroke="#e3d4bd" stroke-width="1.5">
+  <g stroke="#e6e3dc" stroke-width="1.5">
     <path d="M350 265V735 M656 265V735 M961 265V735 M1267 265V735 M1420 265V735"/>
     <path d="M100 340H1495 M100 420H1495 M100 500H1495 M100 580H1495 M100 660H1495 M100 740H1495"/>
   </g>
@@ -49,12 +49,12 @@
   </g>
 
   <!-- baseline circles -->
-  <g fill="#c17a45" stroke="#7a4a28" stroke-width="2.5">
+  <g fill="#c17a45">
     <circle cx="961" cy="300" r="9"/><circle cx="1022" cy="380" r="9"/><circle cx="771" cy="460" r="9"/>
     <circle cx="1038" cy="540" r="9"/><circle cx="1053" cy="620" r="9"/><circle cx="847" cy="700" r="9"/>
   </g>
   <!-- current-price diamonds -->
-  <g fill="#2e2a25">
+  <g fill="#24221e">
     <path d="M656 289 L667 300 L656 311 L645 300 Z"/><path d="M732 369 L743 380 L732 391 L721 380 Z"/>
     <path d="M579 449 L590 460 L579 471 L568 460 Z"/><path d="M809 529 L820 540 L809 551 L798 540 Z"/>
     <path d="M885 609 L896 620 L885 631 L874 620 Z"/><path d="M771 689 L782 700 L771 711 L760 700 Z"/>
@@ -70,7 +70,7 @@
     <text x="656" y="681">80</text><text x="1038" y="681">130</text><text x="847" y="726">105</text>
   </g>
 
-  <rect x="70" y="835" width="1460" height="100" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
-  <text x="104" y="895" font-size="24" font-weight="800" fill="#f0b860">共享横轴让赔率可比；区间越宽，意味着估值对假设越敏感，而不是上行空间越可靠。</text>
+  <rect x="70" y="835" width="1460" height="100" rx="12" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="104" y="895" font-size="24" font-weight="800" fill="#9c5f2a">共享横轴让赔率可比；区间越宽，意味着估值对假设越敏感，而不是上行空间越可靠。</text>
   <text x="70" y="974" class="axis">来源示例：公司财报、市场一致预期、内部估值模型｜截至 2026-07｜本图数据为虚构</text>
 </svg>

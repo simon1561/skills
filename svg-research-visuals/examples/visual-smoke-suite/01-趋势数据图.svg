@@ -1,25 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">趋势图：增速放缓但仍为正</title>
+  <desc id="desc">用五个季度的虚构收入同比增速展示下降中的正增长，所有实际数据点保持同一系列色。</desc>
   <style>
     text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
-    .title { font-size:48px; font-weight:800; fill:#2f2417; }
-    .sub { font-size:22px; font-weight:400; fill:#6b5c45; }
-    .h { font-size:22px; font-weight:700; fill:#2f2417; }
-    .body { font-size:19px; font-weight:400; fill:#4b3e2c; }
-    .note { font-size:16px; font-weight:400; fill:#7d6e54; }
+    .title { font-size:48px; font-weight:800; fill:#24221e; }
+    .sub { font-size:22px; font-weight:400; fill:#68645c; }
+    .h { font-size:22px; font-weight:700; fill:#24221e; }
+    .body { font-size:19px; font-weight:400; fill:#45433e; }
+    .note { font-size:16px; font-weight:400; fill:#77736b; }
     .label { font-size:17px; font-weight:600; fill:#7a4a28; }
-    .num { font-size:25px; font-weight:800; fill:#2e2a25; font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1,"lnum" 1; }
+    .num { font-size:25px; font-weight:800; fill:#24221e; font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1,"lnum" 1; }
   </style>
-  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <rect width="1600" height="900" fill="#fbfaf7"/>
   <text x="70" y="75" class="title">趋势图示例：增速放缓，但仍维持正增长</text>
   <text x="70" y="116" class="sub">示例数据，仅用于测试趋势图的坐标、注释与阅读层级</text>
-  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dedbd3" stroke-width="2"/>
 
-  <rect x="70" y="188" width="1010" height="620" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
+  <rect x="70" y="188" width="1010" height="620" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="110" y="232" class="h">收入同比增速</text>
   <text x="110" y="264" class="note">单位：% ｜ 2025 Q1—2026 Q1</text>
-  <line x1="170" y1="680" x2="1010" y2="680" stroke="#8d7d64" stroke-width="1.5"/>
-  <line x1="170" y1="330" x2="170" y2="680" stroke="#8d7d64" stroke-width="1.5"/>
-  <g stroke="#e8ddcc" stroke-width="1">
+  <line x1="170" y1="680" x2="1010" y2="680" stroke="#a9a69e" stroke-width="1.5"/>
+  <line x1="170" y1="330" x2="170" y2="680" stroke="#a9a69e" stroke-width="1.5"/>
+  <g stroke="#e6e3dc" stroke-width="1">
     <line x1="170" y1="610" x2="1010" y2="610"/><line x1="170" y1="540" x2="1010" y2="540"/>
     <line x1="170" y1="470" x2="1010" y2="470"/><line x1="170" y1="400" x2="1010" y2="400"/>
     <line x1="170" y1="330" x2="1010" y2="330"/>
@@ -29,28 +31,29 @@
   </g>
   <path d="M 240 407 L 410 449 L 580 505 L 750 540 L 920 554 L 920 680 L 240 680 Z" fill="#ecdcc6" opacity="0.55"/>
   <path d="M 240 407 L 410 449 L 580 505 L 750 540 L 920 554" fill="none" stroke="#ab7642" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <g fill="#f8f5ef" stroke="#7a4a28" stroke-width="4">
-    <circle cx="240" cy="407" r="8"/><circle cx="410" cy="449" r="8"/><circle cx="580" cy="505" r="8"/><circle cx="750" cy="540" r="8"/><circle cx="920" cy="554" r="10" fill="#f0b860"/>
+  <g fill="#ab7642">
+    <circle cx="240" cy="407" r="7"/><circle cx="410" cy="449" r="7"/><circle cx="580" cy="505" r="7"/><circle cx="750" cy="540" r="7"/>
   </g>
+  <circle cx="920" cy="554" r="7" fill="#ab7642"/>
   <g class="body" text-anchor="middle"><text x="240" y="720">2025 Q1</text><text x="410" y="720">2025 Q2</text><text x="580" y="720">2025 Q3</text><text x="750" y="720">2025 Q4</text><text x="920" y="720">2026 Q1</text></g>
   <g class="label" text-anchor="middle"><text x="240" y="382">39%</text><text x="410" y="424">33%</text><text x="580" y="480">25%</text><text x="750" y="515">20%</text><text x="920" y="529">18%</text></g>
-  <rect x="724" y="305" width="300" height="96" rx="10" fill="#f4eae7" stroke="#e4cbc5" stroke-width="1.5"/>
-  <rect x="724" y="305" width="7" height="96" rx="3" fill="#9a5048"/>
-  <text x="750" y="340" class="h" fill="#8a443c">读法：斜率在放缓</text>
-  <text x="750" y="372" class="note" fill="#8a443c">趋势仍为正，不等同于收入下降</text>
+  <rect x="724" y="305" width="300" height="84" rx="10" fill="#f9ece8" stroke="#e6d0ca" stroke-width="1.5"/>
+  <rect x="724" y="305" width="7" height="84" rx="3" fill="#9a5048"/>
+  <text x="750" y="340" class="h" fill="#9a5048">读法：斜率在放缓</text>
+  <text x="750" y="372" class="note" fill="#45433e">趋势仍为正，不等同于收入下降</text>
 
-  <rect x="1120" y="188" width="410" height="620" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
+  <rect x="1120" y="188" width="410" height="620" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="1160" y="232" class="h">图表应回答什么？</text>
-  <line x1="1160" y1="256" x2="1490" y2="256" stroke="#e3d4bd" stroke-width="1.5"/>
+  <line x1="1160" y1="256" x2="1490" y2="256" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="1160" y="310" class="num">+18%</text>
   <text x="1160" y="342" class="body">最新同比增速</text>
   <text x="1160" y="404" class="body">• 时间放在横轴</text>
   <text x="1160" y="440" class="body">• 数值用位置和长度表达</text>
   <text x="1160" y="476" class="body">• 关键点直接标注</text>
   <text x="1160" y="512" class="body">• 单位与期间贴近数据</text>
-  <rect x="1160" y="574" width="330" height="132" rx="10" fill="#2e2a25"/>
-  <text x="1190" y="618" font-size="22" font-weight="800" fill="#f0b860">核心信息</text>
-  <text x="1190" y="654" font-size="19" font-weight="400" fill="#f0e8da">读者先看到方向，</text>
-  <text x="1190" y="684" font-size="19" font-weight="400" fill="#f0e8da">再判断变化速度。</text>
+  <rect x="1160" y="574" width="330" height="132" rx="10" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="1190" y="618" font-size="22" font-weight="800" fill="#9c5f2a">核心信息</text>
+  <text x="1190" y="654" font-size="19" font-weight="400" fill="#45433e">读者先看到方向，</text>
+  <text x="1190" y="684" font-size="19" font-weight="400" fill="#45433e">再判断变化速度。</text>
   <text x="70" y="852" class="note">视觉压力测试 01｜检查趋势表达、坐标完整性、注释位置与小字可读性</text>
 </svg>

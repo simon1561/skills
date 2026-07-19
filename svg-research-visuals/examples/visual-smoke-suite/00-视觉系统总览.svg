@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">SVG研究图视觉系统总览</title>
+  <desc id="desc">展示研究图的基础层、数据编码层与认知角色层，以及颜色、标记、组件和间距的核心规范。</desc>
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#24221e}
+    .title{font-size:44px;font-weight:800}
+    .sub{font-size:20px;font-weight:400;fill:#68645c}
+    .label{font-size:14px;font-weight:700;letter-spacing:1px;fill:#8b8377}
+    .section{font-size:26px;font-weight:800}
+    .body{font-size:17px;font-weight:400;fill:#45433e}
+    .small{font-size:15px;font-weight:400;fill:#77736b}
+    .cardt{font-size:18px;font-weight:700}
+    .chipt{font-size:18px;font-weight:700}
+    .panel{fill:#fffdf9;stroke:#dedbd3;stroke-width:2}
+  </style>
+  <rect width="1600" height="1040" fill="#fbfaf7"/>
+
+  <!-- header -->
+  <text x="70" y="72" class="title">SVG 研究图视觉系统</text>
+  <text x="70" y="108" class="sub">基础层 · 数据编码层 · 认知角色层｜颜色与样式承载稳定语义，服从信息关系</text>
+  <line x1="70" y1="138" x2="1530" y2="138" stroke="#dedbd3" stroke-width="2"/>
+
+  <!-- ===== Row 1 : three layers ===== -->
+  <!-- Panel 1 foundation -->
+  <rect x="70" y="176" width="466" height="404" rx="14" class="panel"/>
+  <text x="102" y="218" class="label">01 / FOUNDATION</text>
+  <text x="102" y="254" class="section">基础层</text>
+  <text x="102" y="286" class="small">所有图型共享的骨架，不随颜色模式改变</text>
+  <g>
+    <rect x="102" y="316" width="26" height="26" rx="6" fill="#fbfaf7" stroke="#dedbd3" stroke-width="1.5"/><text x="142" y="334" class="body">背景画布 · #fbfaf7</text>
+    <rect x="102" y="356" width="26" height="26" rx="6" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/><text x="142" y="374" class="body">信息卡片 · #fffdf9</text>
+    <rect x="102" y="396" width="26" height="26" rx="6" fill="#dedbd3"/><text x="142" y="414" class="body">中性边框 · #dedbd3</text>
+    <rect x="102" y="436" width="26" height="26" rx="6" fill="#24221e"/><text x="142" y="454" class="body">主文字 · #24221e</text>
+    <rect x="102" y="476" width="26" height="26" rx="6" fill="#68645c"/><text x="142" y="494" class="body">次文字 · #68645c ｜ 注释 · #77736b</text>
+  </g>
+  <line x1="102" y1="510" x2="504" y2="510" stroke="#e6e3dc" stroke-width="1.5"/>
+  <text x="102" y="536" class="small">画布 1600×1000｜手机 1080×1350</text>
+  <text x="102" y="562" class="small">间距 8px 网格 · 16/24/32/40/48｜数据直接标注</text>
+
+  <!-- Panel 2 data encoding -->
+  <rect x="566" y="176" width="466" height="404" rx="14" class="panel"/>
+  <text x="598" y="218" class="label">02 / DATA ENCODING</text>
+  <text x="598" y="254" class="section">数据编码层</text>
+  <text x="598" y="286" class="small">先判断指标方向，颜色只解决“识别”</text>
+  <!-- category -->
+  <g>
+    <rect x="598" y="312" width="20" height="20" rx="4" fill="#c17a45"/><rect x="624" y="312" width="20" height="20" rx="4" fill="#9a8a55"/><rect x="650" y="312" width="20" height="20" rx="4" fill="#6f7d67"/><rect x="676" y="312" width="20" height="20" rx="4" fill="#6c7d89"/><rect x="702" y="312" width="20" height="20" rx="4" fill="#8a6f78"/>
+    <text x="742" y="328" class="body">分类色｜并列类别</text>
+  </g>
+  <!-- status -->
+  <circle cx="608" cy="366" r="10" fill="#5fa45a"/><text x="626" y="372" class="body">绿 = 改善</text>
+  <circle cx="770" cy="366" r="10" fill="#c96c5d"/><text x="788" y="372" class="body">红 = 恶化（仅方向）</text>
+  <!-- protagonist / reference -->
+  <line x1="598" y1="410" x2="666" y2="410" stroke="#c17a45" stroke-width="5" stroke-linecap="round"/>
+  <line x1="598" y1="424" x2="666" y2="424" stroke="#c9bca9" stroke-width="2" stroke-linecap="round"/>
+  <text x="686" y="422" class="body">主角粗线 · 同行压成参照</text>
+  <!-- points keep their series identity -->
+  <circle cx="608" cy="462" r="6" fill="#c17a45"/>
+  <text x="630" y="468" class="body">数据点保持所属系列色，不另设“最新色”</text>
+  <!-- actual / forecast -->
+  <line x1="598" y1="506" x2="646" y2="506" stroke="#c17a45" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="646" cy="506" r="5" fill="#c17a45"/>
+  <line x1="656" y1="506" x2="716" y2="506" stroke="#c17a45" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 7"/>
+  <text x="732" y="512" class="body">实际实线 / 预测虚线（预测不画圆点）</text>
+  <line x1="598" y1="536" x2="1000" y2="536" stroke="#e6e3dc" stroke-width="1.5"/>
+  <text x="598" y="564" class="small">预测保留系列色相，只改线型并标注“预测”，不另换颜色</text>
+
+  <!-- Panel 3 cognitive roles -->
+  <rect x="1062" y="176" width="468" height="404" rx="14" class="panel"/>
+  <text x="1094" y="218" class="label">03 / COGNITIVE ROLES</text>
+  <text x="1094" y="254" class="section">认知角色层</text>
+  <text x="1094" y="286" class="small">用边条·描边·虚实·底色区分，不一色一角色</text>
+  <!-- fact card -->
+  <rect x="1094" y="312" width="196" height="104" rx="10" fill="#fffdf9" stroke="#d8cdb9" stroke-width="2"/>
+  <rect x="1094" y="312" width="7" height="104" rx="3" fill="#c17a45"/>
+  <rect x="1116" y="328" width="96" height="28" rx="14" fill="#f3e9da"/><text x="1164" y="347" text-anchor="middle" font-size="14" font-weight="600" fill="#9c5f2a">事实 / 证据</text>
+  <text x="1116" y="374" class="small">实线框 ＋ 暖色 pill</text>
+  <text x="1116" y="396" class="small">左侧赭橙边条</text>
+  <!-- inference card -->
+  <rect x="1302" y="312" width="196" height="104" rx="10" fill="#faf7f1" stroke="#b8a78d" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="1324" y="328" width="96" height="28" rx="14" fill="#eef1eb"/><text x="1372" y="347" text-anchor="middle" font-size="14" font-weight="600" fill="#6b6f66">机制 / 推论</text>
+  <text x="1324" y="374" class="small">虚线框 ＋ 冷色 pill</text>
+  <text x="1324" y="396" class="small">无实边条</text>
+  <!-- conclusion & risk chips -->
+  <rect x="1094" y="428" width="196" height="52" rx="10" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="1116" y="460" class="chipt" fill="#9c5f2a">浅色结论栏</text>
+  <rect x="1302" y="428" width="196" height="52" rx="10" fill="#f9ece8" stroke="#e6d0ca" stroke-width="1.5"/>
+  <rect x="1302" y="428" width="7" height="52" rx="3" fill="#9a5048"/>
+  <text x="1326" y="460" class="chipt" fill="#9a5048">风险提示</text>
+  <!-- small judgment anchor -->
+  <circle cx="1116" cy="524" r="21" fill="#d8ad7a"/><text x="1116" y="530" text-anchor="middle" font-size="15" font-weight="700">判断</text>
+  <text x="1152" y="519" class="body">判断锚点：至多一个、小面积</text>
+  <text x="1152" y="541" class="small">默认中浅赭石，避免刺眼的黑色块</text>
+
+  <!-- ===== Row 2 ===== -->
+  <!-- Panel 4 discipline -->
+  <rect x="70" y="606" width="880" height="300" rx="14" class="panel"/>
+  <text x="102" y="648" class="label">04 / SEMANTIC DISCIPLINE</text>
+  <text x="102" y="684" class="section">颜色不是装饰</text>
+  <text x="102" y="716" class="small">先判断指标方向，再决定颜色语义；三类颜色分开管理</text>
+  <rect x="102" y="742" width="400" height="52" rx="10" fill="#eef4ec" stroke="#d7e2d2" stroke-width="1.5"/>
+  <circle cx="130" cy="768" r="9" fill="#5fa45a"/><text x="150" y="774" class="chipt">绿 = 明确改善</text>
+  <rect x="518" y="742" width="330" height="52" rx="10" fill="#f9ece8" stroke="#e6d0ca" stroke-width="1.5"/>
+  <circle cx="546" cy="768" r="9" fill="#c96c5d"/><text x="566" y="774" class="chipt">红 = 明确恶化 / 风险</text>
+  <rect x="102" y="804" width="400" height="52" rx="10" fill="#f3f2ee" stroke="#dedbd3" stroke-width="1.5"/>
+  <circle cx="130" cy="830" r="9" fill="#b3aa98"/><text x="150" y="836" class="chipt">灰 = 普通参照 / 同行</text>
+  <rect x="518" y="804" width="330" height="52" rx="10" fill="#fff8e4" stroke="#e6ddbd" stroke-width="1.5"/>
+  <rect x="536" y="818" width="20" height="24" rx="4" fill="none" stroke="#9c5f2a" stroke-width="2"/><text x="566" y="836" class="chipt">强调 = 浅底 / 描边 / 直标</text>
+  <text x="102" y="888" class="small">费用率↑ ≠ 自动变绿｜成本↓ 可能是改善｜分类色、状态色、风险色严格分离</text>
+
+  <!-- Panel 5 components & data states -->
+  <rect x="980" y="606" width="550" height="300" rx="14" class="panel"/>
+  <text x="1012" y="648" class="label">05 / COMPONENTS</text>
+  <text x="1012" y="684" class="section">组件与数据状态</text>
+  <rect x="1012" y="712" width="160" height="82" rx="10" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
+  <rect x="1012" y="712" width="7" height="82" rx="3" fill="#c17a45"/>
+  <text x="1032" y="744" class="cardt">中性信息卡</text><text x="1032" y="770" class="small">语义色只在左条</text>
+  <rect x="1188" y="712" width="160" height="82" rx="10" fill="#f9ece8" stroke="#e6d0ca" stroke-width="1.5"/>
+  <rect x="1188" y="712" width="7" height="82" rx="3" fill="#9a5048"/>
+  <text x="1208" y="744" class="cardt">风险提示卡</text><text x="1208" y="770" class="small">浅红底＋窄红条</text>
+  <rect x="1364" y="712" width="150" height="82" rx="10" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="1384" y="744" class="cardt">浅色结论栏</text><text x="1384" y="770" class="small">深炭字＋赭橙点</text>
+  <text x="1012" y="842" class="body">数据状态</text>
+  <line x1="1120" y1="836" x2="1156" y2="836" stroke="#24221e" stroke-width="3"/><text x="1164" y="842" class="small">实际</text>
+  <line x1="1262" y1="836" x2="1298" y2="836" stroke="#24221e" stroke-width="3" stroke-dasharray="7 6"/><text x="1306" y="842" class="small">预测</text>
+  <rect x="1400" y="824" width="114" height="28" rx="8" fill="#f3f2ee" stroke="#dedbd3" stroke-width="1.5"/><text x="1457" y="843" text-anchor="middle" class="small">缺失/不可比</text>
+  <text x="1012" y="888" class="small">来源：公司财报、数据平台｜截至 YYYY-MM｜E 为估算</text>
+
+  <!-- conclusion strip -->
+  <rect x="70" y="928" width="1460" height="60" rx="12" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="105" y="966" font-size="22" font-weight="800" fill="#9c5f2a">结构先于颜色 · 语义先于装饰 · 可读性先于复杂度</text>
+  <text x="1495" y="966" text-anchor="end" class="small">图形形式服从信息关系</text>
+  <text x="70" y="1020" class="small">SVG 研究图视觉系统总览｜三层系统与语义纪律的锚点参考</text>
+</svg>

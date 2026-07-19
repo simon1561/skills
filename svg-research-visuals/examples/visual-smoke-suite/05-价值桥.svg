@@ -1,41 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">价值桥：从基准价值到压力情景</title>
+  <desc id="desc">用虚构数据展示每股内在价值从基准值经过多个减项到压力情景的变化。</desc>
   <style>
     text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
-    .title { font-size:48px; font-weight:800; fill:#2f2417; }.sub { font-size:22px; font-weight:400; fill:#6b5c45; }
-    .h { font-size:23px; font-weight:700; fill:#2f2417; }.body { font-size:19px; font-weight:400; fill:#4b3e2c; }
-    .note { font-size:16px; font-weight:400; fill:#7d6e54; }.num { font-size:25px; font-weight:800; fill:#2e2a25; font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1,"lnum" 1; }
+    .title { font-size:48px; font-weight:800; fill:#24221e; }.sub { font-size:22px; font-weight:400; fill:#68645c; }
+    .h { font-size:23px; font-weight:700; fill:#24221e; }.body { font-size:19px; font-weight:400; fill:#45433e; }
+    .note { font-size:16px; font-weight:400; fill:#77736b; }.num { font-size:25px; font-weight:800; fill:#24221e; font-variant-numeric:tabular-nums lining-nums; font-feature-settings:"tnum" 1,"lnum" 1; }
   </style>
-  <rect width="1600" height="900" fill="#f8f5ef"/>
+  <rect width="1600" height="900" fill="#fbfaf7"/>
   <text x="70" y="75" class="title">价值桥示例：从基准价值到压力情景</text>
   <text x="70" y="116" class="sub">示例数据，仅测试瀑布图的起点、变化项、终点与计算口径</text>
-  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dfcdb1" stroke-width="2"/>
+  <line x1="70" y1="148" x2="1530" y2="148" stroke="#dedbd3" stroke-width="2"/>
 
-  <rect x="70" y="188" width="1120" height="620" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
-  <text x="110" y="232" class="h">每股内在价值变化</text>
-  <text x="110" y="264" class="note">单位：美元 / ADS ｜ 变化项为假设演示</text>
-  <line x1="140" y1="710" x2="1130" y2="710" stroke="#8d7d64" stroke-width="1.5"/>
-  <g stroke="#e8ddcc" stroke-width="1"><line x1="140" y1="560" x2="1130" y2="560"/><line x1="140" y1="410" x2="1130" y2="410"/></g>
+  <rect x="70" y="188" width="1120" height="620" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
+  <text x="110" y="224" class="h">每股内在价值变化</text>
+  <text x="110" y="256" class="note">单位：美元 / ADS ｜ 变化项为假设演示</text>
+  <line x1="140" y1="710" x2="1130" y2="710" stroke="#a9a69e" stroke-width="1.5"/>
+  <g stroke="#e6e3dc" stroke-width="1"><line x1="140" y1="560" x2="1130" y2="560"/><line x1="140" y1="410" x2="1130" y2="410"/></g>
   <g class="note" text-anchor="end"><text x="124" y="716">0</text><text x="124" y="566">50</text><text x="124" y="416">100</text></g>
   <!-- baseline: 710; 3px per dollar -->
   <rect x="200" y="305" width="130" height="405" rx="6" fill="#7a4a28"/>
-  <rect x="430" y="305" width="130" height="42" rx="6" fill="#9a5048"/>
-  <rect x="660" y="347" width="130" height="21" rx="6" fill="#9a5048"/>
-  <rect x="890" y="368" width="130" height="9" rx="5" fill="#9a5048"/>
+  <rect x="430" y="305" width="130" height="42" rx="6" fill="#c96c5d"/>
+  <rect x="660" y="347" width="130" height="21" rx="6" fill="#c96c5d"/>
+  <rect x="890" y="368" width="130" height="9" rx="5" fill="#c96c5d"/>
   <rect x="1060" y="377" width="70" height="333" rx="6" fill="#94612f"/>
-  <g stroke="#b7a38a" stroke-width="2" stroke-dasharray="7 7"><line x1="330" y1="305" x2="430" y2="305"/><line x1="560" y1="347" x2="660" y2="347"/><line x1="790" y1="368" x2="890" y2="368"/><line x1="1020" y1="377" x2="1060" y2="377"/></g>
-  <g class="num" text-anchor="middle"><text x="265" y="284">135</text><text x="495" y="288" fill="#9a5048">−14</text><text x="725" y="330" fill="#9a5048">−7</text><text x="955" y="351" fill="#9a5048">−3</text><text x="1095" y="356">111</text></g>
+  <g stroke="#b08d5a" stroke-width="2" stroke-dasharray="7 7"><line x1="330" y1="305" x2="430" y2="305"/><line x1="560" y1="347" x2="660" y2="347"/><line x1="790" y1="368" x2="890" y2="368"/><line x1="1020" y1="377" x2="1060" y2="377"/></g>
+  <g class="num" text-anchor="middle"><text x="265" y="292">135</text><text x="495" y="292" fill="#c96c5d">−14</text><text x="725" y="330" fill="#c96c5d">−7</text><text x="955" y="351" fill="#c96c5d">−3</text><text x="1095" y="356">111</text></g>
   <g class="body" text-anchor="middle"><text x="265" y="752">基准价值</text><text x="495" y="752">核心利润下修</text><text x="725" y="752">增长业务折价</text><text x="955" y="752">现金投入</text><text x="1095" y="752">压力情景</text></g>
 
-  <rect x="1230" y="188" width="300" height="620" rx="14" fill="#fdfaf5" stroke="#dfcdb1" stroke-width="1.5"/>
+  <rect x="1230" y="188" width="300" height="620" rx="14" fill="#fffdf9" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="1270" y="232" class="h">正确读法</text>
-  <line x1="1270" y1="256" x2="1490" y2="256" stroke="#e3d4bd" stroke-width="1.5"/>
+  <line x1="1270" y1="256" x2="1490" y2="256" stroke="#dedbd3" stroke-width="1.5"/>
   <text x="1270" y="314" class="body">• 起点与终点为总值</text>
   <text x="1270" y="356" class="body">• 中间柱只表示变化</text>
   <text x="1270" y="398" class="body">• 虚线连接累计水平</text>
   <text x="1270" y="440" class="body">• 同一尺度，不混口径</text>
-  <rect x="1270" y="538" width="220" height="120" rx="10" fill="#2e2a25"/>
-  <text x="1300" y="580" font-size="21" font-weight="800" fill="#f0b860">关键判断</text>
-  <text x="1300" y="616" font-size="18" font-weight="400" fill="#f0e8da">变化项如何累计，</text>
-  <text x="1300" y="644" font-size="18" font-weight="400" fill="#f0e8da">决定终点的可信度。</text>
+  <rect x="1270" y="538" width="220" height="120" rx="10" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="1300" y="574" font-size="21" font-weight="800" fill="#9c5f2a">关键判断</text>
+  <text x="1300" y="610" font-size="18" font-weight="400" fill="#45433e">变化项如何累计，</text>
+  <text x="1300" y="638" font-size="18" font-weight="400" fill="#45433e">决定终点的可信度。</text>
   <text x="70" y="852" class="note">视觉压力测试 05｜检查起点/终点、累计连接线、负向变化和单位口径是否一目了然</text>
 </svg>

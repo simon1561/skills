@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SVG 视觉压力测试集｜总览</title>
   <style>
-    :root { --bg:#f8f5ef; --card:#fdfaf5; --ink:#2e2a25; --muted:#6b5c45; --line:#dfcdb1; --gold:#b08d5a; }
+    :root { --bg:#fbfaf7; --card:#fffdf9; --ink:#24221e; --muted:#68645c; --line:#dedbd3; --accent:#c17a45; }
     * { box-sizing:border-box; }
     body { margin:0; padding:52px 58px 70px; background:var(--bg); color:var(--ink); font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
     h1 { margin:0; font-size:42px; line-height:1.18; font-weight:800; letter-spacing:.2px; }
@@ -13,18 +13,21 @@
     .rule { height:2px; background:var(--line); margin-bottom:28px; }
     .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
     figure { margin:0; padding:13px; background:var(--card); border:1px solid var(--line); border-radius:12px; }
-    img { display:block; width:100%; height:220px; object-fit:contain; object-position:center; background:#f8f5ef; border-radius:7px; }
+    figure.lead { grid-column:1 / -1; }
+    figure.lead img { height:380px; }
+    img { display:block; width:100%; height:220px; object-fit:contain; object-position:center; background:#fbfaf7; border-radius:7px; }
     figcaption { padding:12px 4px 3px; font-size:16px; font-weight:600; }
     figcaption span { margin-left:8px; font-size:14px; font-weight:400; color:var(--muted); }
-    .footer { margin-top:28px; padding:16px 20px; background:var(--ink); border:1px solid var(--gold); border-radius:12px; color:#f0e8da; font-size:17px; font-weight:400; }
-    .footer strong { color:#f0b860; font-weight:800; }
+    .footer { margin-top:28px; padding:16px 20px; background:#f7f1dc; border:1px solid #e6ddbd; border-radius:12px; color:#45433e; font-size:17px; font-weight:400; }
+    .footer strong { color:#9c5f2a; font-weight:800; }
   </style>
 </head>
 <body>
   <h1>SVG 视觉压力测试集｜总览</h1>
-  <p class="sub">二十一类高频信息关系，同一缩略尺度审查字体、留白、色彩锚点与结构一致性。</p>
+  <p class="sub">先看视觉系统锚点，再以二十一类高频信息关系，在同一缩略尺度审查字体、留白、色彩语义与结构一致性。</p>
   <div class="rule"></div>
   <main class="grid">
+    <figure class="lead"><img src="00-视觉系统总览.png" alt="视觉系统总览"><figcaption>00 视觉系统总览 <span>基础层 · 数据编码层 · 认知角色层 · 语义纪律</span></figcaption></figure>
     <figure><img src="01-趋势数据图.png" alt="趋势数据图"><figcaption>01 趋势数据图 <span>连续数量变化</span></figcaption></figure>
     <figure><img src="02-机制流程图.png" alt="机制流程图"><figcaption>02 机制流程图 <span>因果与传导</span></figcaption></figure>
     <figure><img src="03-横向比较表.png" alt="横向比较表"><figcaption>03 横向比较表 <span>精确横向比较</span></figcaption></figure>
@@ -47,6 +50,6 @@
     <figure><img src="20-闭环飞轮.png" alt="闭环飞轮"><figcaption>20 闭环飞轮 <span>反馈媒介＋断点</span></figcaption></figure>
     <figure><img src="21-论点树.png" alt="论点树"><figcaption>21 论点树 <span>共同判断＋开放风险</span></figcaption></figure>
   </main>
-  <div class="footer"><strong>审查重点：</strong>同一视觉语言不等于同一版式。每张图都应让信息关系决定结构，而非把所有内容做成卡片。</div>
+  <div class="footer"><strong>审查重点：</strong>同一视觉语言不等于同一版式。基础层保持一致，数据编码层与认知角色层按信息关系承载语义；颜色解决识别，结构解决关系，不把所有内容做成卡片。</div>
 </body>
 </html>

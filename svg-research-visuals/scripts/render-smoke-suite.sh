@@ -50,3 +50,5 @@ for svg in "${svg_files[@]}"; do
 
   echo "已渲染 $(basename "$svg") → $(basename "$output") [$dimensions]"
 done
+
+"$script_dir/audit-svg-layout.sh" "$@"

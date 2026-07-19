@@ -3,16 +3,16 @@
   <desc id="desc">用虚构数据演示收入构成随时间迁移。左侧100%堆叠面积图展示全景，右侧独立折线精确展示云业务占比。</desc>
   <style>
     text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
-    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
-    .card{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:2}.h{font-size:28px;font-weight:800;fill:#9c5f2a}
-    .body{font-size:19px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
-    .axis{font-size:15px;font-weight:400;fill:#7d6e54}.grid{stroke:#e3d4bd;stroke-width:1.5}
+    .title{font-size:48px;font-weight:800;fill:#24221e}.sub{font-size:23px;font-weight:400;fill:#68645c}
+    .card{fill:#fffdf9;stroke:#dedbd3;stroke-width:2}.h{font-size:28px;font-weight:800;fill:#9c5f2a}
+    .body{font-size:19px;font-weight:400;fill:#45433e}.note{font-size:15px;font-weight:400;fill:#77736b}
+    .axis{font-size:15px;font-weight:400;fill:#77736b}.grid{stroke:#e6e3dc;stroke-width:1.5}
     .num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1}
   </style>
-  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <rect width="1600" height="1000" fill="#fbfaf7"/>
   <text x="70" y="76" class="title">构成迁移：全景与关键层必须分开读</text>
   <text x="70" y="116" class="sub">示例数据｜收入构成，2021—2026E｜层序固定；关键中间层单独抽出，避免波动基线误导</text>
-  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#dedbd3" stroke-width="2"/>
 
   <rect x="70" y="185" width="915" height="575" rx="12" class="card"/>
   <rect x="1025" y="185" width="505" height="575" rx="12" class="card"/>
@@ -37,7 +37,7 @@
   <path d="M120 420 L270 400 L420 380 L570 360 L720 348 L870 340 L870 396 L720 416 L570 440 L420 468 L270 496 L120 520 Z" fill="#6f7d67"/>
   <path d="M120 340 L270 332 L420 328 L570 320 L720 316 L870 316 L870 340 L720 348 L570 360 L420 380 L270 400 L120 420 Z" fill="#6c7d89"/>
   <path d="M120 300 L270 300 L420 300 L570 300 L720 300 L870 300 L870 316 L720 316 L570 320 L420 328 L270 332 L120 340 Z" fill="#8a6f78"/>
-  <line x1="720" y1="300" x2="720" y2="700" stroke="#f8f5ef" stroke-width="2.5" stroke-dasharray="8 7" opacity="0.9"/>
+  <line x1="720" y1="300" x2="720" y2="700" stroke="#fbfaf7" stroke-width="2.5" stroke-dasharray="8 7" opacity="0.9"/>
 
   <!-- x labels -->
   <g class="axis num" text-anchor="middle">
@@ -46,7 +46,7 @@
   </g>
 
   <!-- end labels -->
-  <g class="num" font-size="15" font-weight="600" fill="#3d3122">
+  <g class="num" font-size="15" font-weight="600" fill="#45433e">
     <path d="M870 648H900" stroke="#9a8a55" stroke-width="2"/><text x="908" y="653">软件 26%</text>
     <path d="M870 496H900" stroke="#c17a45" stroke-width="2"/><text x="908" y="501">云 50%</text>
     <path d="M870 368H900" stroke="#6f7d67" stroke-width="2"/><text x="908" y="373">服务 14%</text>
@@ -77,7 +77,7 @@
   <text x="1055" y="330" class="body">15% → 50%</text>
   <text x="1055" y="358" class="note">累计上升 35ppt</text>
 
-  <rect x="70" y="835" width="1460" height="100" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
-  <text x="104" y="895" font-size="24" font-weight="800" fill="#f0b860">堆叠图负责全景，独立折线负责关键层的精确变化。</text>
+  <rect x="70" y="835" width="1460" height="100" rx="12" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="104" y="895" font-size="24" font-weight="800" fill="#9c5f2a">堆叠图负责全景，独立折线负责关键层的精确变化。</text>
   <text x="70" y="974" class="axis">来源示例：公司财报、市场一致预期｜截至 2026-07｜E 为估算｜本图数据为虚构</text>
 </svg>

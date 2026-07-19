@@ -3,15 +3,15 @@
   <desc id="desc">用虚构平台监管案例演示发生了什么、公司如何应对、产生何种取舍和估值如何变化的四层叙事，并给出可验证信号。</desc>
   <style>
     text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
-    .title{font-size:48px;font-weight:800;fill:#2f2417}.sub{font-size:23px;font-weight:400;fill:#6b5c45}
-    .h{font-size:24px;font-weight:800;fill:#9c5f2a}.h2{font-size:20px;font-weight:700;fill:#2f2417}
-    .body{font-size:18px;font-weight:400;fill:#3d3122}.note{font-size:15px;font-weight:400;fill:#7d6e54}
-    .band{fill:#fdfaf5;stroke:#d8c5a7;stroke-width:1.8}
+    .title{font-size:48px;font-weight:800;fill:#24221e}.sub{font-size:23px;font-weight:400;fill:#68645c}
+    .h{font-size:24px;font-weight:800;fill:#9c5f2a}.h2{font-size:20px;font-weight:700;fill:#24221e}
+    .body{font-size:18px;font-weight:400;fill:#45433e}.note{font-size:15px;font-weight:400;fill:#77736b}
+    .band{fill:#fffdf9;stroke:#dedbd3;stroke-width:1.8}
   </style>
-  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <rect width="1600" height="1000" fill="#fbfaf7"/>
   <text x="70" y="76" class="title">分层叙事：监管变化如何穿透平台价值</text>
   <text x="70" y="116" class="sub">虚构案例｜规则变化 → 经营应对 → 利润取舍 → 估值含义；四层逐级展开，但不假定精确因果</text>
-  <line x1="70" y1="146" x2="1530" y2="146" stroke="#d8c5a7" stroke-width="2"/>
+  <line x1="70" y1="146" x2="1530" y2="146" stroke="#dedbd3" stroke-width="2"/>
 
   <!-- narrative spine -->
   <line x1="145" y1="235" x2="145" y2="700" stroke="#b08d5a" stroke-width="4"/>
@@ -43,11 +43,11 @@
   <text x="240" y="739" class="body">不能只把一次性罚款从净现金扣除，也不能假定所有合规投入都会产生回报</text>
 
   <!-- monitoring -->
-  <rect x="70" y="805" width="1460" height="130" rx="12" fill="#2e2a25" stroke="#b08d5a" stroke-width="2"/>
-  <text x="105" y="846" font-size="24" font-weight="800" fill="#f0b860">验证叙事，而不是相信叙事：四个后续信号</text>
-  <text x="105" y="888" font-size="18" font-weight="700" fill="#d9bf9a">实际费率与take rate</text>
-  <text x="430" y="888" font-size="18" font-weight="700" fill="#d9bf9a">合规成本占收入比例</text>
-  <text x="800" y="888" font-size="18" font-weight="700" fill="#d9bf9a">商家留存与申诉解决率</text>
-  <text x="1225" y="888" font-size="18" font-weight="700" fill="#d9bf9a">自由现金流恢复速度</text>
+  <rect x="70" y="805" width="1460" height="130" rx="12" fill="#f7f1dc" stroke="#e6ddbd" stroke-width="1.5"/>
+  <text x="105" y="846" font-size="24" font-weight="800" fill="#9c5f2a">验证叙事，而不是相信叙事：四个后续信号</text>
+  <text x="105" y="888" font-size="18" font-weight="700" fill="#24221e">实际费率与take rate</text>
+  <text x="430" y="888" font-size="18" font-weight="700" fill="#24221e">合规成本占收入比例</text>
+  <text x="800" y="888" font-size="18" font-weight="700" fill="#24221e">商家留存与申诉解决率</text>
+  <text x="1225" y="888" font-size="18" font-weight="700" fill="#24221e">自由现金流恢复速度</text>
   <text x="70" y="974" class="note">来源：虚构示例｜仅用于验证发生—应对—取舍—价值含义的分层叙事结构</text>
 </svg>
