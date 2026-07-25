@@ -1,55 +1,42 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SVG 视觉压力测试集｜总览</title>
-  <style>
-    :root { --bg:#fbfaf7; --card:#fffdf9; --ink:#24221e; --muted:#68645c; --line:#dedbd3; --accent:#c17a45; }
-    * { box-sizing:border-box; }
-    body { margin:0; padding:52px 58px 70px; background:var(--bg); color:var(--ink); font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
-    h1 { margin:0; font-size:42px; line-height:1.18; font-weight:800; letter-spacing:.2px; }
-    .sub { margin:12px 0 28px; font-size:18px; font-weight:400; color:var(--muted); }
-    .rule { height:2px; background:var(--line); margin-bottom:28px; }
-    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
-    figure { margin:0; padding:13px; background:var(--card); border:1px solid var(--line); border-radius:12px; }
-    figure.lead { grid-column:1 / -1; }
-    figure.lead img { height:380px; }
-    img { display:block; width:100%; height:220px; object-fit:contain; object-position:center; background:#fbfaf7; border-radius:7px; }
-    figcaption { padding:12px 4px 3px; font-size:16px; font-weight:600; }
-    figcaption span { margin-left:8px; font-size:14px; font-weight:400; color:var(--muted); }
-    .footer { margin-top:28px; padding:16px 20px; background:#f7f1dc; border:1px solid #e6ddbd; border-radius:12px; color:#45433e; font-size:17px; font-weight:400; }
-    .footer strong { color:#9c5f2a; font-weight:800; }
-  </style>
+<meta charset="utf-8">
+<title>精致暖色研究图 · v2 审查台</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9e4da;font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;color:#26231e}
+  header{padding:28px 40px;border-bottom:1px solid #ddd6c9;background:#f6f2ea}
+  h1{margin:0;font-size:24px;font-weight:800}
+  header p{margin:8px 0 0;color:#6a655c;font-size:14px;line-height:1.6;max-width:980px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(480px,1fr));gap:26px;padding:34px 40px 80px}
+  figure{margin:0;background:#fffefb;border-radius:10px;overflow:hidden;box-shadow:0 1px 2px rgba(50,42,32,.05),0 12px 30px -18px rgba(50,42,32,.28)}
+  img{width:100%;display:block;background:#fffefb}
+  figcaption{padding:11px 16px;font-size:13px;color:#6a655c;border-top:1px solid #efe6d9}
+  figcaption b{color:#9c5d28;font-family:"Libre Franklin","Helvetica Neue",monospace;margin-right:8px}
+</style>
 </head>
 <body>
-  <h1>SVG 视觉压力测试集｜总览</h1>
-  <p class="sub">先看视觉系统锚点，再以二十一类高频信息关系，在同一缩略尺度审查字体、留白、色彩语义与结构一致性。</p>
-  <div class="rule"></div>
-  <main class="grid">
-    <figure class="lead"><img src="00-视觉系统总览.png" alt="视觉系统总览"><figcaption>00 视觉系统总览 <span>基础层 · 数据编码层 · 认知角色层 · 语义纪律</span></figcaption></figure>
-    <figure><img src="01-趋势数据图.png" alt="趋势数据图"><figcaption>01 趋势数据图 <span>连续数量变化</span></figcaption></figure>
-    <figure><img src="02-机制流程图.png" alt="机制流程图"><figcaption>02 机制流程图 <span>因果与传导</span></figcaption></figure>
-    <figure><img src="03-横向比较表.png" alt="横向比较表"><figcaption>03 横向比较表 <span>精确横向比较</span></figcaption></figure>
-    <figure><img src="04-手机转发图.png" alt="手机转发图"><figcaption>04 手机转发图 <span>纵向阅读</span></figcaption></figure>
-    <figure><img src="05-价值桥.png" alt="价值桥"><figcaption>05 价值桥 <span>累计变化</span></figcaption></figure>
-    <figure><img src="06-层级图.png" alt="层级图"><figcaption>06 层级图 <span>归属关系</span></figcaption></figure>
-    <figure><img src="07-构成与排序.png" alt="构成与排序"><figcaption>07 构成与排序 <span>比例与规模</span></figcaption></figure>
-    <figure><img src="08-事件时间线.png" alt="事件时间线"><figcaption>08 事件时间线 <span>离散事件</span></figcaption></figure>
-    <figure><img src="09-二维定位图.png" alt="二维定位图"><figcaption>09 二维定位图 <span>相对定位</span></figcaption></figure>
-    <figure><img src="10-条件与证伪.png" alt="条件与证伪"><figcaption>10 条件与证伪 <span>可验证判断</span></figcaption></figure>
-    <figure><img src="11-KPI仪表板.png" alt="KPI仪表板"><figcaption>11 KPI仪表板 <span>多指标状态</span></figcaption></figure>
-    <figure><img src="12-多系列同行趋势.png" alt="多系列同行趋势"><figcaption>12 多系列同行趋势 <span>主角＋参照</span></figcaption></figure>
-    <figure><img src="13-估值敏感性矩阵.png" alt="估值敏感性矩阵"><figcaption>13 估值敏感性矩阵 <span>双变量情景</span></figcaption></figure>
-    <figure><img src="14-小倍图同行比较.png" alt="小倍图同行比较"><figcaption>14 小倍图同行比较 <span>共享尺度</span></figcaption></figure>
-    <figure><img src="15-构成迁移与关键层.png" alt="构成迁移与关键层"><figcaption>15 构成迁移与关键层 <span>全景＋精确趋势</span></figcaption></figure>
-    <figure><img src="16-真实数据散点图.png" alt="真实数据散点图"><figcaption>16 真实数据散点图 <span>阈值＋标签避让</span></figcaption></figure>
-    <figure><img src="17-估值区间图.png" alt="估值区间图"><figcaption>17 估值区间图 <span>赔率＋不确定性</span></figcaption></figure>
-    <figure><img src="18-论证链.png" alt="论证链"><figcaption>18 论证链 <span>事实＋机制＋限制</span></figcaption></figure>
-    <figure><img src="19-分层叙事.png" alt="分层叙事"><figcaption>19 分层叙事 <span>认知顺序＋验证信号</span></figcaption></figure>
-    <figure><img src="20-闭环飞轮.png" alt="闭环飞轮"><figcaption>20 闭环飞轮 <span>反馈媒介＋断点</span></figcaption></figure>
-    <figure><img src="21-论点树.png" alt="论点树"><figcaption>21 论点树 <span>共同判断＋开放风险</span></figcaption></figure>
-  </main>
-  <div class="footer"><strong>审查重点：</strong>同一视觉语言不等于同一版式。基础层保持一致，数据编码层与认知角色层按信息关系承载语义；颜色解决识别，结构解决关系，不把所有内容做成卡片。</div>
+<header>
+  <h1>精致暖色研究图 · v2 视觉审查台</h1>
+  <p>统一缩略尺度并排，检查跨版式的字体、信息密度、色彩锚点与留白是否一致（防止漂移）。共 25 张，编号 00–24 连续；00 为锚点参考，22–24 为 v2 新增主力（指标总表 / 三情景 / 归因拆解）。西文/数字默认走系统回退（Libre Franklin→Helvetica/Arial、Newsreader→Georgia），无 @import / 网络字体，直接打开即可正常显示；运行 <code>scripts/subset-fonts.sh</code> 后改为内嵌 WOFF2 子集，离线也命中目标西文字。缩略图仅供快速节奏复核。</p>
+</header>
+<div class="grid" id="g"></div>
+<script>
+const figs=[
+["00","视觉系统总览"],["01","趋势数据图"],["02","机制流程图"],["03","横向比较表"],["04","手机转发图"],
+["05","价值桥"],["06","层级图"],["07","构成与排序"],["08","事件时间线"],["09","二维定位图"],
+["10","条件与证伪"],["11","KPI仪表板"],["12","多系列同行趋势"],["13","估值敏感性矩阵"],["14","小倍图同行比较"],
+["15","构成迁移与关键层"],["16","真实数据散点图"],["17","估值区间图"],["18","论证链"],["19","分层叙事"],
+["20","闭环飞轮"],["21","论点树"],["22","指标总表"],["23","三情景假设"],["24","归因拆解"]
+];
+const g=document.getElementById('g');
+for(const [n,name] of figs){
+  const f=document.createElement('figure');
+  const im=document.createElement('img');im.src=n+'-'+name+'.svg';im.loading='lazy';im.alt=name;
+  const c=document.createElement('figcaption');c.innerHTML='<b>'+n+'</b>'+name;
+  f.appendChild(im);f.appendChild(c);g.appendChild(f);
+}
+</script>
 </body>
 </html>

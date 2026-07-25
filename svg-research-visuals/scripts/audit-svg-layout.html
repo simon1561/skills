@@ -5,6 +5,10 @@
   <object id="target" type="image/svg+xml"></object>
   <pre id="result">PENDING</pre>
   <script>
+    // 用浏览器真实渲染边界审计 SVG：SVG 越界、容器越界、紧凑组件留白、文字重叠、无障碍元数据。
+    // 关键：SVG <text> 的 getBBox() 返回的是字体“上伸+下伸”全盒（含 cap 顶以上、基线以下的空白 leading），
+    // 并非可见字形墨迹。若直接用该盒做重叠/留白判断，相邻大数字与小标签会因空白 leading 相互“擦到”，
+    // 产生随字体可用性漂移的误报。故所有文字几何先转为“墨迹盒”（上下各裁掉约 0.26em 空白）再判定。
     const params = new URLSearchParams(location.search);
     const file = params.get('file');
     const target = document.getElementById('target');
@@ -13,9 +17,6 @@
 
     const pad = (n) => Math.round(n * 10) / 10;
     const containsPoint = (r, x, y) => x >= r.x && x <= r.x + r.width && y >= r.y && y <= r.y + r.height;
-    const intersect = (a, b, tolerance = 1) =>
-      Math.min(a.x + a.width, b.x + b.width) - Math.max(a.x, b.x) > tolerance &&
-      Math.min(a.y + a.height, b.y + b.height) - Math.max(a.y, b.y) > tolerance;
 
     function rootBox(el) {
       const b = el.getBBox();
@@ -27,6 +28,11 @@
       const xs = points.map(p => p.x), ys = points.map(p => p.y);
       return { x:Math.min(...xs), y:Math.min(...ys), width:Math.max(...xs)-Math.min(...xs), height:Math.max(...ys)-Math.min(...ys) };
     }
+    // 文字墨迹盒：垂直裁掉字体空白 leading（上伸区 cap 以上、下伸区基线以下），近似可见字形范围。
+    const ink = (t) => {
+      const trim = 0.26 * t.fs;
+      return { x:t.box.x, y:t.box.y + trim, width:t.box.width, height:Math.max(1, t.box.height - 2 * trim) };
+    };
 
     target.addEventListener('load', () => {
       const doc = target.contentDocument;
@@ -34,6 +40,8 @@
       const view = svg.viewBox.baseVal;
       const bounds = {x:view.x, y:view.y, width:view.width, height:view.height};
       const errors = [];
+
+      // 无障碍元数据
       const labelledBy = (svg.getAttribute('aria-labelledby') || '').trim().split(/\s+/).filter(Boolean);
       if (svg.getAttribute('role') !== 'img') errors.push('无障碍元数据 | 根元素缺少 role="img"');
       if (labelledBy.length < 2) errors.push('无障碍元数据 | 缺少 aria-labelledby="title desc"');
@@ -43,13 +51,20 @@
       }
       if (!doc.querySelector('title')?.textContent.trim()) errors.push('无障碍元数据 | 缺少有效的 <title>');
       if (!doc.querySelector('desc')?.textContent.trim()) errors.push('无障碍元数据 | 缺少有效的 <desc>');
-      const texts = [...doc.querySelectorAll('text')].filter(el => el.getBBox().width > 0).map((el, i) => ({el, i, box:rootBox(el), value:(el.textContent || '').trim()}));
-      const rects = [...doc.querySelectorAll('rect')].filter(el => el.getBBox().width > 0).map(el => ({el, box:rootBox(el)}));
 
+      const texts = [...doc.querySelectorAll('text')].filter(el => el.getBBox().width > 0).map((el, i) => {
+        const box = rootBox(el);
+        const sy = Math.abs(el.getCTM().d) || 1;
+        const fs = (parseFloat(getComputedStyle(el).fontSize) || 16) * sy;
+        return { el, i, box, fs, value:(el.textContent || '').trim() };
+      });
+      const rects = [...doc.querySelectorAll('rect')].filter(el => el.getBBox().width > 0).map(el => ({ el, box:rootBox(el) }));
+
+      // SVG 越界 / 容器越界（均用墨迹盒）
       for (const t of texts) {
-        const b = t.box;
+        const b = ink(t);
         if (b.x < bounds.x-0.5 || b.y < bounds.y-0.5 || b.x+b.width > bounds.x+bounds.width+0.5 || b.y+b.height > bounds.y+bounds.height+0.5) {
-          errors.push(`SVG越界 | ${t.value} | bbox=${JSON.stringify(b)}`);
+          errors.push(`SVG越界 | ${t.value} | bbox=${JSON.stringify({x:pad(b.x),y:pad(b.y),width:pad(b.width),height:pad(b.height)})}`);
         }
         const cx=b.x+b.width/2, cy=b.y+b.height/2;
         const candidates = rects.filter(r => containsPoint(r.box,cx,cy) && r.box.width < bounds.width-1 && r.box.height < bounds.height-1).sort((a,b)=>a.box.width*a.box.height-b.box.width*b.box.height);
@@ -61,23 +76,38 @@
         }
       }
 
+      // 紧凑组件留白与横向越界
       for (const {box:c} of rects) {
         if (c.height > 120 || c.width > 900) continue;
         const group = texts.filter(t => containsPoint(c, t.box.x+t.box.width/2, t.box.y+t.box.height/2));
         if (!group.length) continue;
-        const left=Math.min(...group.map(t=>t.box.x)), right=Math.max(...group.map(t=>t.box.x+t.box.width));
-        const top=Math.min(...group.map(t=>t.box.y)), bottom=Math.max(...group.map(t=>t.box.y+t.box.height));
+        const ib = group.map(ink);
+        const top=Math.min(...ib.map(b=>b.y)), bottom=Math.max(...ib.map(b=>b.y+b.height));
         const topPad=top-c.y, bottomPad=c.y+c.height-bottom;
-        if (Math.abs(topPad-bottomPad) > 8) {
-          errors.push(`上下留白失衡 | ${group.map(t=>t.value).join(' / ')} | top=${pad(topPad)} bottom=${pad(bottomPad)}`);
+        const centers = group.map(t=>t.box.y+t.box.height/2).sort((a,b)=>a-b);
+        const multiline = (centers[centers.length-1]-centers[0]) > 8;
+        if (multiline) {
+          // 多行内容卡：不要求上下对称（标题+大数字本就非几何居中），只要求不贴边、不越界
+          if (topPad < -0.5 || bottomPad < -0.5 || Math.min(topPad,bottomPad) < 4)
+            errors.push(`紧凑组件贴边 | ${group.map(t=>t.value).join(' / ')} | top=${pad(topPad)} bottom=${pad(bottomPad)}`);
+        } else {
+          // 单行 pill/标签：上下留白应基本对称（阈值 10px，吸收 getBBox 残余不对称）
+          if (Math.abs(topPad-bottomPad) > 10)
+            errors.push(`上下留白失衡 | ${group.map(t=>t.value).join(' / ')} | top=${pad(topPad)} bottom=${pad(bottomPad)}`);
         }
+        const left=Math.min(...group.map(t=>t.box.x)), right=Math.max(...group.map(t=>t.box.x+t.box.width));
         if (left < c.x-0.5 || right > c.x+c.width+0.5) {
           errors.push(`组件横向越界 | ${group.map(t=>t.value).join(' / ')}`);
         }
       }
 
+      // 文字重叠（墨迹盒；要求横向>1px 且纵向超过较矮墨迹盒的 22%，滤除空白 leading 擦碰）
       for (let i=0;i<texts.length;i++) for (let j=i+1;j<texts.length;j++) {
-        if (intersect(texts[i].box,texts[j].box)) errors.push(`文字重叠 | ${texts[i].value} <> ${texts[j].value}`);
+        const a=ink(texts[i]), b=ink(texts[j]);
+        const ox=Math.min(a.x+a.width,b.x+b.width)-Math.max(a.x,b.x);
+        const oy=Math.min(a.y+a.height,b.y+b.height)-Math.max(a.y,b.y);
+        if (ox>1 && oy>Math.max(2, 0.22*Math.min(a.height,b.height)))
+          errors.push(`文字重叠 | ${texts[i].value} <> ${texts[j].value}`);
       }
 
       result.textContent = errors.length ? `FAIL\n${errors.join('\n')}` : 'PASS';
