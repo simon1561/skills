@@ -2,3 +2,6 @@
 svg-research-visuals/examples/visual-smoke-suite/*.png
 __pycache__/
 *.py[cod]
+
+# stock-research 本地备份（git 历史与 tag 即回退点）
+stock-research/**/*.bak-*
