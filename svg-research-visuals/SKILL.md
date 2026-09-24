@@ -5,7 +5,7 @@ description: 为研究文档、投资备忘、仪表板、Obsidian笔记和演�
 
 # SVG 信息图视觉规范
 
-> **v2**：色板与排版以 `references/tokens.md` 为准 —— OKLCH 推导、中文/数字/中英混排统一使用系统中文无衬线栈（macOS 优先 PingFang），纯英文小标签可用 Libre Franklin 并按需由 subset-fonts.sh 内嵌 WOFF2 子集；去描边微投影、状态色配平且色盲可分、风险为结构模式、强调底收敛一支、中性方向标记（▲▼）承担普通涨跌。示例集已全部回灌至 v2，并新增 22-指标总表 / 23-三情景假设 / 24-归因拆解。
+> 颜色与排版取值以 `references/tokens.md` 为准；页面与组件视觉以 `examples/visual-smoke-suite/00-视觉系统总览.svg` 为准。
 
 ## 核心标准
 
@@ -58,7 +58,7 @@ description: 为研究文档、投资备忘、仪表板、Obsidian笔记和演�
    - 保留关键事实、数据与逻辑。
    - 改善布局、文字、间距和层级，但不要把图改成另一个论点。
 9. **每次都进行视觉验证。**
-   - **日常画图优先使用 Codex 内置浏览器，不产出 PNG。** 在 skill 根目录启动临时本地服务，例如 `python3 -m http.server 8765 --bind 127.0.0.1`；通过内置浏览器打开 `http://127.0.0.1:8765/scripts/audit-svg-layout.html?file=<URL编码后的路径>`。suite 内样图只传文件名；suite 外文件按 `examples/visual-smoke-suite/` 为基准传相对路径，例如 skill 根目录下的文件使用 `../../文件名.svg`。必须走 `http://`，不能用 `file://`，否则 `<object>` 的 `contentDocument` 会被同源策略阻断。
+   - **日常画图优先使用所在客户端的内置浏览器（Codex 用 Codex 内置浏览器，Claude Code 用 Claude 浏览器面板），不产出 PNG。** 在 skill 根目录启动临时本地服务，例如 `python3 -m http.server 8765 --bind 127.0.0.1`；通过内置浏览器打开 `http://127.0.0.1:8765/scripts/audit-svg-layout.html?file=<URL编码后的路径>`。suite 内样图只传文件名；suite 外文件按 `examples/visual-smoke-suite/` 为基准传相对路径，例如 skill 根目录下的文件使用 `../../文件名.svg`。必须走 `http://`，不能用 `file://`，否则 `<object>` 的 `contentDocument` 会被同源策略阻断。
    - 等待审计页完成后，读取 `document.getElementById('result').textContent`：只有精确返回 `PASS` 才算自动审计通过；返回 `FAIL` 时逐条修复。随后直接对内置浏览器页面截图，目视检查字号、配色、越界、留白和层级。内置浏览器截图可能缩放回传，但足以日常质检；它不落盘，也不承担正式 PNG 交付。
    - 自检结束后必须停止临时 HTTP server；即使审计失败或任务中断，也要清理该进程。
    - **维护 skill 的视觉回归基线是另一条低频路径。** 只有更新 `examples/visual-smoke-suite/*.png` 时才运行 `scripts/render-smoke-suite.sh`；该脚本和 `scripts/audit-svg-layout.sh` 必须显式使用 `CHROME_BIN` 指向 Chrome for Testing 或其他独立 Chromium，并受超时保护。禁止把 `/Applications/Google Chrome.app` 作为 headless 运行时。
