@@ -5,3 +5,8 @@ __pycache__/
 
 # stock-research 本地备份（git 历史与 tag 即回退点）
 stock-research/**/*.bak-*
+*.bak-*
+
+# 评测临时产物（skill-creator 迭代工作区）
+_workspaces/
+*-workspace/
