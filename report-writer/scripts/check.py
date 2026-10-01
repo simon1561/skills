@@ -8,10 +8,9 @@
 
 用法：python3 check.py <报告.md> [--fix] [--target obsidian|markdown]
 --fix 只自动修复加粗标点位置，其余问题需人工处理。
---target 声明交付目标，影响空行一项的判定：
-  obsidian  可删空行计入格式问题，需先用 tidy_blank_lines.py 处理
-  markdown  段落间空行应当保留，空行提示不适用
-  不传      维持原行为，空行只作提示，不影响是否通过
+--target 声明交付目标（obsidian 或 markdown）。两者都按标准 Markdown 写，
+段落之间保留一个空行，空行提示均不适用；不传时空行只作提示，不影响是否通过。
+（2026-10-01 起 Obsidian 也保留段落间空行，电脑上的空行高度由库里的样式片段调矮。）
 退出码：0 通过，2 存在需修复的格式问题，1 用法或参数错误。
 """
 import io
@@ -741,11 +740,8 @@ def main():
             print("  " + p_)
     else:
         print("  正常")
-    if target == "markdown":
-        print("  目标为 markdown：段落之间应保留空行，上列可删提示不适用")
-    elif target == "obsidian" and blank_drop_count(text):
-        ok = False
-        print("  目标为 obsidian：可删空行须先处理，运行 tidy_blank_lines.py <文件> 查看 diff，确认后加 --apply")
+    if target in ("markdown", "obsidian"):
+        print("  目标为 %s：段落之间应保留空行，上列可删提示不适用" % target)
 
     print("\n── 层次（需人工判断）──")
     hier = check_hierarchy(text)

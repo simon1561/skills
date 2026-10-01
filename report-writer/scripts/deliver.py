@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""交付入口：按交付目标清理空行并做完整格式检查。
-
-把三件事串成固定顺序，避免漏步：预览清理 → 确认写入 → 完整检查 → 按退出码放行。
+"""交付入口：按交付目标做完整格式检查。
 
 用法：
-  python3 deliver.py <文件.md> --target obsidian [--apply]
+  python3 deliver.py <文件.md> --target obsidian
   python3 deliver.py <文件.md> --target markdown
 
-  obsidian  段落之间不留空行（受保护结构的前后空行不动，见 SKILL.md 6.3）。
-            不加 --apply 时只预览待清理的 diff，不改文件；加 --apply 时先清理再检查。
-            --apply 视为已确认预览内容，脚本不校验是否真的预览过；清理会合并段落，
-            属于有意的结构变换。
-  markdown  按标准 Markdown 解析，段落间空行应当保留，不做任何清理。
+两种目标都按标准 Markdown 写，段落之间保留一个空行，不做空行清理（见 SKILL.md 6.3）。
+2026-10-01 前 obsidian 目标会删掉段落间空行；现在 Obsidian 也保留空行，电脑上的空行
+高度由库里的样式片段调矮。--apply 已无作用，传入时报错以免误以为做了清理。
 
 退出码：0 自动检查通过（仍需人工复核），2 存在待处理项，1 用法或参数错误；
 检查器返回其他非零码时原样透出，不并入 2。
@@ -66,19 +62,11 @@ def main():
     if not os.path.exists(path):
         print("找不到文件：%s" % path)
         return 1
-    if target == "markdown" and apply_:
-        print("markdown 目标不做空行清理，--apply 无效")
+    if apply_:
+        print("两种目标都不再做空行清理，--apply 无效")
         return 1
 
-    if target == "obsidian":
-        print("步骤 1／2　空行清理（%s）" % ("写入" if apply_ else "预览，不改文件"))
-        tidy = run("tidy_blank_lines.py", [path] + (["--apply"] if apply_ else []))
-        if tidy.returncode not in (0, 2):
-            return tidy.returncode
-        print("")
-
-    label = "步骤 2／2" if target == "obsidian" else "格式检查"
-    print("%s　格式检查（目标：%s）" % (label, target))
+    print("格式检查（目标：%s）" % target)
     checked = run("check.py", [path, "--target", target])
 
     print("")
@@ -88,10 +76,7 @@ def main():
     if checked.returncode != 2:
         print("格式检查未能正常完成，退出码 %d；请直接运行 check.py 查看原因。" % checked.returncode)
         return checked.returncode
-    if target == "obsidian" and not apply_:
-        print("存在待处理项。空行部分确认上面的 diff 无误后，重跑本命令并加 --apply；其余项需人工处理。")
-    else:
-        print("存在待处理项，处理后重跑本命令。")
+    print("存在待处理项，处理后重跑本命令。")
     return 2
 
 
