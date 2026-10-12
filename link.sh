@@ -20,7 +20,7 @@ THIRD="$HOME/.agents/skills"
 TRASH="$HOME/.Trash/skill-links-$(date +%Y%m%d-%H%M%S)"
 DRY=0; [ "${1:-}" = "-n" ] && DRY=1
 
-own=(stock-research svg-research-visuals report-writer)
+own=(stock-research svg-research-visuals report-writer weekly-reading-guide)
 lark=($(cd "$THIRD" && ls -d lark-* 2>/dev/null))
 other=(cubox weread-skills general-video hyperframes hyperframes-animation hyperframes-audio
        hyperframes-cli hyperframes-core hyperframes-creative hyperframes-keyframes
